@@ -130,6 +130,10 @@ The resumes v1 is unsure about are saved as `unknown`. That pile is the map for 
 comes next. Each item below is just a new folder plus a new line:
 
 ```
+  0.  TOP PRIORITY: bind the "basic" cue to the skill token.
+      Real resumes exposed stray-word false alarms ("Accounting, Basic,
+      Budgeting" tags Budgeting basic; "Basic First Aid" tags First Aid).
+      Fix: only accept "basic" when it attaches to the skill, not just nearby.
   1.  a check for fake employment dates
   2.  a flag for skills the text has but Affinda dropped
   3.  typo-tolerant matching on the key "bad" cues

@@ -131,8 +131,11 @@ list. That is it.
 
 ## 5. Does it work? (the results)
 
-We ran it on 300 real parsed resumes. Here is how much of the dropped small print we
-got back, and how often we wrongly flagged a good person.
+We tested two ways: a **scored** run on 300 résumés we authored (so we know the right
+answers), and a **real-world** run on 18 genuine strangers' résumés (no answer key, so we
+eyeball it).
+
+**Scored run, 300 authored résumés** (how much dropped small print we got back):
 
 ```
 SKILL STRENGTH    caught █████████████████████░░░  88%     false alarms: 0
@@ -144,7 +147,21 @@ CERT VALIDITY     caught ██████████████████�
 - **False alarms** = good people we wrongly flagged. **Zero, across all 300.**
 - Speed: about **1 millisecond per resume** (~1,200 per second on one core).
 
-Full numbers and a per-resume table: [`eval/results/REPORT.md`](eval/results/REPORT.md).
+**Real-world run, 18 genuine résumés** (the honest reality check):
+
+```
+DEGREES + CERTS   0 false alarms across 76 items          clean ✅
+SKILLS            0 severe false alarms, BUT 23 mild
+                  "basic" chirps out of 1,302 skills       needs a glance ⚠️
+```
+
+On real résumés the mild **`basic`** tag sometimes lands on the wrong skill (the word
+"basic" shows up in comma skill-dumps and course names like "Basic First Aid"). The loud
+warnings stayed trustworthy; the quiet "basic" one needs a human glance. We list every
+one openly.
+
+Full numbers: scored [`eval/results/REPORT.md`](eval/results/REPORT.md) · real-world
+[`eval/results/REAL_REPORT.md`](eval/results/REAL_REPORT.md).
 
 ---
 

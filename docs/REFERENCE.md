@@ -126,8 +126,9 @@ The full **status menu** (every value you can receive):
 
 ## 4. "Where is it weak?" (shown with examples)
 
-The one real weak spot: **we only understand wording we have seen before.** Here is
-exactly what that looks like, in plain examples.
+Two honest weak spots. **One:** we only understand wording we have seen before. **Two:**
+on real résumés a stray "basic" can land on the wrong skill. Here is exactly what both
+look like, in plain examples.
 
 <br/>
 
@@ -159,37 +160,62 @@ Now and then an odd phrase tricks us into marking a problem as "fine".
 
 <br/>
 
-**The one mistake we never make: wrongly accusing a good person.**
+**Weak spot 3: on real résumés, a stray "basic" can flag a clean skill.**
+
+This one we only saw once we ran **real** strangers' résumés. Real skills often arrive as
+one big comma list, and the word "basic" shows up for reasons that have nothing to do
+with the skill next to it.
 
 ```
-   Résumé says:   "Expert in Python, 9 years"
-   What we do:      we mark it strong.  ✅  Correct, and we will NEVER turn this
-                    into a warning.
+   Résumé says:   "Skills: Accounting, Basic, Budgeting, Data Entry"
+                  (the person listed "Basic" as its own skill)
+   What we do:      we see "basic" sitting beside "Budgeting" and tag Budgeting basic.
+                    Wrong. The "basic" was never about Budgeting.
+
+   Résumé says:   "Basic First Aid Certification"   (a course name)
+   What we do:      we tag the nearby "First Aid" skill as basic. But "Basic First Aid"
+                    is just the name of the course, not a weakness.
 ```
 
-> Think of a smoke alarm that sometimes misses real smoke, but **never shrieks when the
-> air is clean.** Our worst mistake is staying quiet about a real problem. We never
-> invent a problem that is not there.
+So on real data the **`basic` tag is our low-precision spot.** Good news: it is only ever
+the *mildest* tag. The severe ones (`no experience`, `lapsed`, `expired`, `revoked`)
+did **not** false-alarm, and degrees and certs stayed completely clean.
 
 <br/>
 
-**A couple of smaller things:**
+**What we DON'T get wrong, even on real résumés.**
+
+```
+   ·  The severe warnings never fired on a clean item (0 across 18 real résumés).
+   ·  Degrees: 0 false flags.   Certs: 0 false flags.
+   ·  "Expert in Python, 9 years"  ->  marked strong, and never turned into a warning.
+```
+
+> Think of a smoke alarm. On real résumés ours will, now and then, **chirp "basic"** at
+> clean air (the stray-word problem above). But it does not scream "FIRE" (the severe
+> warnings) unless there really is smoke. The loud alarms stay trustworthy; the quiet
+> "basic" chirp needs a human glance.
+
+<br/>
+
+**A smaller thing:**
 
 ```
   ·  Tiny symbol-heavy names like "C++", "C#", ".NET" are hard to pin down,
      so we handle them cautiously and sometimes skip them.
-
-  ·  We tested on résumés we wrote ourselves (then ran through Affinda). We have
-     not yet run a big pile of real strangers' résumés, so read the results as
-     "works on our examples", not a guarantee in the wild.
 ```
 
 <br/>
 
-We checked all of this with a fresh set of résumés written in wording we had never used
-before. It confirmed the picture above: lots of quiet misses on unusual wording, but not
-a single good person wrongly flagged. See
+We checked all of this two ways. First with a **fresh blind set** of résumés written in
+wording we had never used before: lots of quiet misses on unusual wording, but no false
+alarms on clean synthetic data. See
 [`../eval/results/BLIND_REPORT.md`](../eval/results/BLIND_REPORT.md).
+
+Then with **18 real strangers' résumés** parsed by Affinda. That is where the stray-"basic"
+problem showed up: 23 `basic` chirps across 1,378 items, most of them stray-word matches,
+and zero severe false alarms. Every one is listed with its résumé clause in
+[`../eval/results/REAL_REPORT.md`](../eval/results/REAL_REPORT.md).
 
 Teaching the tool more wording is the main job of v2 (see the roadmap in
 [`DECISIONS.md`](DECISIONS.md)).
