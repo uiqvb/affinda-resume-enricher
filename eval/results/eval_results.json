@@ -8,9 +8,9 @@
       "affinda_extracted_target": "81/92 (88%)",
       "affinda_dropped_target": 11,
       "our_exact_status": "65/81 (80%)",
-      "our_severity_agree": "69/75 (92%)",
-      "problem_recall_flagged_warning": "46/52 (88%)",
-      "control_precision_left_info": "23/23 (100%)",
+      "our_needs_review_agree": "69/75 (92%)",
+      "problem_recall_flagged_yes": "46/52 (88%)",
+      "control_precision_left_no": "23/23 (100%)",
       "trap_precision_no_false_alarm": "6/6 (100%)"
     },
     "education": {
@@ -21,9 +21,9 @@
       "affinda_extracted_target": "84/94 (89%)",
       "affinda_dropped_target": 10,
       "our_exact_status": "62/84 (74%)",
-      "our_severity_agree": "67/84 (80%)",
-      "problem_recall_flagged_warning": "54/71 (76%)",
-      "control_precision_left_info": "13/13 (100%)",
+      "our_needs_review_agree": "67/84 (80%)",
+      "problem_recall_flagged_yes": "54/71 (76%)",
+      "control_precision_left_no": "13/13 (100%)",
       "trap_precision_no_false_alarm": "0/0"
     },
     "certification": {
@@ -34,17 +34,17 @@
       "affinda_extracted_target": "77/84 (92%)",
       "affinda_dropped_target": 7,
       "our_exact_status": "65/77 (84%)",
-      "our_severity_agree": "71/77 (92%)",
-      "problem_recall_flagged_warning": "42/48 (88%)",
-      "control_precision_left_info": "29/29 (100%)",
+      "our_needs_review_agree": "71/77 (92%)",
+      "problem_recall_flagged_yes": "42/48 (88%)",
+      "control_precision_left_no": "29/29 (100%)",
       "trap_precision_no_false_alarm": "0/0"
     }
   },
   "throughput": {
     "resumes_enriched": 270,
-    "avg_ms_per_resume": 0.867,
-    "max_ms": 3.465,
-    "resumes_per_second_single_thread": 1153
+    "avg_ms_per_resume": 1.183,
+    "max_ms": 5.574,
+    "resumes_per_second_single_thread": 845
   },
   "rows": {
     "skill": [
@@ -59,11 +59,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Expert",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -77,11 +77,11 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "8+ years",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -95,11 +95,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Advanced",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -113,11 +113,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Expert",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -130,7 +130,7 @@
         "source_line": "8+ years of Azure",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -146,11 +146,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Advanced",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -164,11 +164,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Expert",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -182,11 +182,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "8+ years",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -200,11 +200,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Proficient",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -217,7 +217,7 @@
         "source_line": "Strong Tableau experience",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -233,12 +233,12 @@
         "extracted": true,
         "affinda_name": "Solid Spark",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Solid",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "S012",
@@ -251,11 +251,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Proficient",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -269,11 +269,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Strong",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -287,12 +287,12 @@
         "extracted": true,
         "affinda_name": "Solid Java",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Solid",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "S015",
@@ -305,11 +305,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Proficient",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -323,11 +323,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Strong",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -341,11 +341,11 @@
         "extracted": true,
         "affinda_name": "Microsoft Azure",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Working knowledge",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -359,11 +359,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Hands-on",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -377,11 +377,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Comfortable with",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -395,11 +395,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Working knowledge",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -413,11 +413,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Hands-on",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -430,7 +430,7 @@
         "source_line": "Comfortable with Tableau",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -446,11 +446,11 @@
         "extracted": true,
         "affinda_name": "Apache Spark",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Working knowledge",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -464,11 +464,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "intermediate",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Hands-on",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -482,11 +482,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Basic",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -500,11 +500,11 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Familiar with",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -518,11 +518,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Some",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -536,11 +536,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Basic",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -554,11 +554,11 @@
         "extracted": true,
         "affinda_name": "Microsoft Azure",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Familiar with",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -572,11 +572,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Some",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -590,11 +590,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Basic",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -608,11 +608,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Familiar with",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -626,11 +626,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Some",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -644,11 +644,11 @@
         "extracted": true,
         "affinda_name": "Tableau (Business Intelligence Software)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Basic",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -661,7 +661,7 @@
         "source_line": "Exposure to Spark",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -677,11 +677,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Limited",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -695,11 +695,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Brief",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -713,11 +713,11 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Exposure to",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -731,11 +731,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Limited",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -749,11 +749,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Brief",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -766,7 +766,7 @@
         "source_line": "Exposure to Azure",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -782,11 +782,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Limited",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -800,11 +800,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Brief",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -818,11 +818,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Exposure to",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -836,11 +836,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "basic",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Limited",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -853,7 +853,7 @@
         "source_line": "Brief exposure to Tableau",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -868,7 +868,7 @@
         "source_line": "Currently learning Spark",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -884,11 +884,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Studying",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -902,11 +902,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Learning",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -920,11 +920,11 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Currently learning",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -938,11 +938,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Studying",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -956,11 +956,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Learning",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -973,7 +973,7 @@
         "source_line": "Currently learning Azure",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -989,11 +989,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Studying",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1007,11 +1007,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Learning",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1025,11 +1025,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Currently learning",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1043,11 +1043,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Go",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1061,11 +1061,11 @@
         "extracted": true,
         "affinda_name": "Tableau (Business Intelligence Software)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Tableau (Business Intelligence Software)",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1079,11 +1079,11 @@
         "extracted": true,
         "affinda_name": "Apache Spark",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Apache Spark",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1097,11 +1097,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "TypeScript",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1115,11 +1115,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Python (Programming Language)",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1133,11 +1133,11 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Java (Programming Language)",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1151,11 +1151,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Previously",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1169,11 +1169,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "years ago",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1186,7 +1186,7 @@
         "source_line": "Formerly worked with Azure",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -1202,11 +1202,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Previously",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1220,11 +1220,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "years ago",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1238,11 +1238,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Formerly",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1256,11 +1256,11 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "lapsed",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Previously",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1273,7 +1273,7 @@
         "source_line": "Used Tableau years ago",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -1289,11 +1289,11 @@
         "extracted": true,
         "affinda_name": "Apache Spark",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "No experience",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1307,11 +1307,11 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Not proficient",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1325,11 +1325,11 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": ": none",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1343,11 +1343,11 @@
         "extracted": true,
         "affinda_name": "Java background",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Without any Java background",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1361,11 +1361,11 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "No experience",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1379,11 +1379,11 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Not proficient",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1396,7 +1396,7 @@
         "source_line": "Azure: none",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -1412,11 +1412,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Without any Kubernetes background",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1430,11 +1430,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "No experience",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1448,11 +1448,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "no_experience",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Not proficient",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1546,11 +1546,11 @@
         "extracted": true,
         "affinda_name": "Microsoft Azure",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Interested in",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1564,11 +1564,11 @@
         "extracted": true,
         "affinda_name": "Kubernetes",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Keen to learn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1582,11 +1582,11 @@
         "extracted": true,
         "affinda_name": "Docker (Software)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Interested in",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1600,11 +1600,11 @@
         "extracted": true,
         "affinda_name": "React.js (Javascript Library)",
         "our_status": "learning",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Keen to learn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1618,12 +1618,12 @@
         "extracted": true,
         "affinda_name": "Go",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Go",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "S094",
@@ -1636,12 +1636,12 @@
         "extracted": true,
         "affinda_name": "Tableau (Business Intelligence Software)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Tableau (Business Intelligence Software)",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "S095",
@@ -1654,7 +1654,7 @@
         "extracted": true,
         "affinda_name": "Apache Spark",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "expert",
         "outcome": "trap_ok"
       },
@@ -1669,7 +1669,7 @@
         "extracted": true,
         "affinda_name": "TypeScript",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "TypeScript",
         "outcome": "trap_ok"
       },
@@ -1684,7 +1684,7 @@
         "extracted": true,
         "affinda_name": "Python (Programming Language)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Python (Programming Language)",
         "outcome": "trap_ok"
       },
@@ -1699,7 +1699,7 @@
         "extracted": true,
         "affinda_name": "Java (Programming Language)",
         "our_status": "strong",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "expert",
         "outcome": "trap_ok"
       },
@@ -1714,7 +1714,7 @@
         "extracted": true,
         "affinda_name": "SQL (Programming Language)",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "SQL (Programming Language)",
         "outcome": "trap_ok"
       },
@@ -1729,7 +1729,7 @@
         "extracted": true,
         "affinda_name": "Amazon Web Services",
         "our_status": "plain",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Amazon Web Services",
         "outcome": "trap_ok"
       }
@@ -1746,12 +1746,12 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Science",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "E002",
@@ -1764,11 +1764,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "completed",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "graduated",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1782,11 +1782,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "completed",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "conferred",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1800,12 +1800,12 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "E005",
@@ -1818,12 +1818,12 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "PhD",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "E006",
@@ -1836,11 +1836,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "completed",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "graduated",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1854,11 +1854,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "completed",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "conferred",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1872,12 +1872,12 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Nursing",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "E009",
@@ -1890,12 +1890,12 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Diploma",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "E010",
@@ -1907,7 +1907,7 @@
         "source_line": "Certificate IV in Cybersecurity \u2014 Harbour Polytechnic (graduated 2022)",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -1923,11 +1923,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "currently enrolled",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1941,11 +1941,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "in progress",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1959,11 +1959,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Pursuing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -1977,11 +1977,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -1995,11 +1995,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Candidate for",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2013,11 +2013,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Studying towards",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2031,11 +2031,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "ongoing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2049,11 +2049,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Nursing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2067,11 +2067,11 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "currently enrolled",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2084,7 +2084,7 @@
         "source_line": "Certificate IV in Cybersecurity (in progress), Harbour Polytechnic",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2100,11 +2100,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Pursuing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2118,11 +2118,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Master of Engineering",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2136,11 +2136,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Candidate for",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2154,11 +2154,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Studying towards",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2172,11 +2172,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "ongoing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2190,11 +2190,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Associate of Arts",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2208,11 +2208,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expected",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2226,11 +2226,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Nursing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2244,11 +2244,11 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expected",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2261,7 +2261,7 @@
         "source_line": "Certificate IV in Cybersecurity, Harbour Polytechnic (graduating 2029)",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2277,11 +2277,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "due",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2295,11 +2295,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expected",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2313,11 +2313,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "anticipated",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2331,11 +2331,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expected",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2349,11 +2349,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "graduating",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2367,11 +2367,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "due",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2385,11 +2385,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expected",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2403,11 +2403,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "expected",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "anticipated",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2421,11 +2421,11 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "discontinued",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2438,7 +2438,7 @@
         "source_line": "Certificate IV in Cybersecurity (incomplete), Harbour Polytechnic",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2454,11 +2454,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "did not complete",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2472,11 +2472,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "left before finishing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2490,11 +2490,11 @@
         "extracted": true,
         "affinda_name": "Partial Juris Doctor (JD",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Partial",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2508,11 +2508,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2526,11 +2526,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "discontinued",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2544,11 +2544,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "incomplete",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2562,11 +2562,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "did not complete",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2580,11 +2580,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "left before finishing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2597,7 +2597,7 @@
         "source_line": "Partial Diploma in Accounting, Summit State University",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2612,7 +2612,7 @@
         "source_line": "Certificate IV in Cybersecurity, Harbour Polytechnic \u2014 unfinished",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2628,11 +2628,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "discontinued",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2646,11 +2646,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "incomplete",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2664,11 +2664,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2682,11 +2682,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrew",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2700,11 +2700,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "PhD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2718,11 +2718,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2736,11 +2736,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2754,11 +2754,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrew",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2772,11 +2772,11 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Diploma",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2789,7 +2789,7 @@
         "source_line": "Certificate IV in Cybersecurity (withdrawn 2022), Harbour Polytechnic",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2805,11 +2805,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2823,11 +2823,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "incomplete",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrew",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2841,11 +2841,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "not awarded",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2859,11 +2859,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2877,11 +2877,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "requirements not met",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2895,11 +2895,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "exams not passed",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2913,11 +2913,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "not awarded",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2931,11 +2931,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Nursing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -2949,11 +2949,11 @@
         "extracted": true,
         "affinda_name": "Diploma in Accounting",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "requirements not met",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -2966,7 +2966,7 @@
         "source_line": "Certificate IV in Cybersecurity \u2014 Harbour Polytechnic, exams not passed",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -2982,11 +2982,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Science",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3000,11 +3000,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Master of Engineering",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3018,11 +3018,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "requirements not met",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3036,11 +3036,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "not_awarded",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "exams not passed",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3054,11 +3054,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "deferred",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3072,11 +3072,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "on academic leave",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3090,11 +3090,11 @@
         "extracted": true,
         "affinda_name": "MBA",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "study break",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3108,11 +3108,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "enrolment suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3126,11 +3126,11 @@
         "extracted": true,
         "affinda_name": "Diploma",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "deferred",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3143,7 +3143,7 @@
         "source_line": "Certificate IV in Cybersecurity, Harbour Polytechnic \u2014 on academic leave",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -3159,11 +3159,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "study break",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3177,11 +3177,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "deferred",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "enrolment suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3195,11 +3195,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD) (ABD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Juris Doctor (JD) (ABD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3213,11 +3213,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3231,11 +3231,11 @@
         "extracted": true,
         "affinda_name": "PhD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "PhD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3249,11 +3249,11 @@
         "extracted": true,
         "affinda_name": "Associate of Arts",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "ABD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3267,11 +3267,11 @@
         "extracted": true,
         "affinda_name": "MBA (ABD \u2014 all but dissertation",
         "our_status": "in_progress",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "ABD",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3285,11 +3285,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Nursing",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Nursing",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3303,11 +3303,11 @@
         "extracted": true,
         "affinda_name": "Diploma in Accounting",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Diploma in Accounting",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3320,7 +3320,7 @@
         "source_line": "Certificate IV in Cybersecurity \u2014 Harbour Polytechnic, candidate (ABD)",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -3336,11 +3336,11 @@
         "extracted": true,
         "affinda_name": "Bachelor of Science",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Bachelor of Science",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3354,11 +3354,11 @@
         "extracted": true,
         "affinda_name": "Master of Engineering",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Master of Engineering",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3372,11 +3372,11 @@
         "extracted": true,
         "affinda_name": "Juris Doctor (JD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Juris Doctor (JD",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3390,11 +3390,11 @@
         "extracted": true,
         "affinda_name": "Doctor of Medicine (MD",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Doctor of Medicine (MD",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3470,11 +3470,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "active",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3488,11 +3488,11 @@
         "extracted": true,
         "affinda_name": "PMP",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3506,11 +3506,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "in good standing",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3524,12 +3524,12 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C005",
@@ -3542,11 +3542,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3560,11 +3560,11 @@
         "extracted": true,
         "affinda_name": "Medical license \u2014 in good standing",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "in good standing",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3578,11 +3578,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "active",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3596,12 +3596,12 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline) (current",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Security Clearance (Baseline) (current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C009",
@@ -3614,11 +3614,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3631,7 +3631,7 @@
         "source_line": "Bar admission, recertified 2022",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -3647,11 +3647,11 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3665,11 +3665,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt, recertified",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "recertified",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3683,11 +3683,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3701,11 +3701,11 @@
         "extracted": true,
         "affinda_name": "PMP, recertified",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "recertified",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3719,11 +3719,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3737,11 +3737,11 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3755,11 +3755,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "no longer valid",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3773,11 +3773,11 @@
         "extracted": true,
         "affinda_name": "Medical license",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3791,11 +3791,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3809,11 +3809,11 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3827,11 +3827,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "lapsed",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3844,7 +3844,7 @@
         "source_line": "Bar admission \u2014 no longer valid",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -3860,11 +3860,11 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3878,11 +3878,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3896,11 +3896,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3914,11 +3914,11 @@
         "extracted": true,
         "affinda_name": "PMP, lapsed",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "lapsed",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3932,11 +3932,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "no longer valid",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3950,11 +3950,11 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -3968,11 +3968,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -3986,11 +3986,11 @@
         "extracted": true,
         "affinda_name": "Medical license",
         "our_status": "expired",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "expired",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4004,11 +4004,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4022,11 +4022,11 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4040,11 +4040,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn by issuer",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4057,7 +4057,7 @@
         "source_line": "Bar admission \u2014 revoked 2021",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -4073,11 +4073,11 @@
         "extracted": true,
         "affinda_name": "CCNA \u2014 licence",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4091,11 +4091,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn by issuer",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4109,11 +4109,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4127,11 +4127,11 @@
         "extracted": true,
         "affinda_name": "PMP \u2014 licence revoked",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4145,11 +4145,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn by issuer",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4163,11 +4163,11 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -4181,11 +4181,11 @@
         "extracted": true,
         "affinda_name": "CPA \u2014 licence",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "revoked",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4199,11 +4199,11 @@
         "extracted": true,
         "affinda_name": "Medical license",
         "our_status": "revoked",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "withdrawn by issuer",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4217,11 +4217,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4235,11 +4235,11 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline) (under suspension",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Security Clearance (Baseline) (under suspension",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -4253,11 +4253,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4270,7 +4270,7 @@
         "source_line": "Bar admission (under suspension)",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -4286,11 +4286,11 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4304,11 +4304,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt (under suspension",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "under suspension",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4322,11 +4322,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "suspended",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4340,11 +4340,11 @@
         "extracted": true,
         "affinda_name": "PMP (under suspension",
         "our_status": "suspended",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "under suspension",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4358,11 +4358,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "scheduled",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4376,11 +4376,11 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -4394,11 +4394,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "awaiting",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4412,11 +4412,11 @@
         "extracted": true,
         "affinda_name": "Candidate, Medical license",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "Candidate",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4430,11 +4430,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "scheduled",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4448,11 +4448,11 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "pending",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4466,11 +4466,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "awaiting",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4483,7 +4483,7 @@
         "source_line": "Candidate, Bar admission",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -4499,11 +4499,11 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "scheduled",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4517,11 +4517,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "pending",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4535,11 +4535,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "did not pass",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4553,11 +4553,11 @@
         "extracted": true,
         "affinda_name": "PMP",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "unsuccessful",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4571,11 +4571,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "did not pass",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4589,11 +4589,11 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": false,
-        "severity_match": false,
+        "needs_review_match": false,
         "outcome": "miss"
       },
       {
@@ -4607,11 +4607,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "did not pass",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4625,11 +4625,11 @@
         "extracted": true,
         "affinda_name": "Medical license",
         "our_status": "pending",
-        "our_severity": "warning",
+        "our_needs_review": "yes",
         "evidence": "unsuccessful",
-        "expected_severity": "warning",
+        "expected_needs_review": "yes",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4643,11 +4643,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "valid",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4661,12 +4661,12 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Security Clearance (Baseline",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C069",
@@ -4679,11 +4679,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4696,7 +4696,7 @@
         "source_line": "Bar admission \u2014 valid until 2027",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -4712,12 +4712,12 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "CCNA",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C072",
@@ -4730,11 +4730,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4748,11 +4748,11 @@
         "extracted": true,
         "affinda_name": "AWS Certified Solutions Architect",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "valid",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4766,12 +4766,12 @@
         "extracted": true,
         "affinda_name": "PMP",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "PMP",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C075",
@@ -4784,11 +4784,11 @@
         "extracted": true,
         "affinda_name": "CISSP",
         "our_status": "active",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "current",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4802,12 +4802,12 @@
         "extracted": true,
         "affinda_name": "Registered Nurse (RN) license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Registered Nurse (RN) license",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": false,
-        "severity_match": true,
-        "outcome": "severity_ok"
+        "needs_review_match": true,
+        "outcome": "needs_review_ok"
       },
       {
         "test_id": "C077",
@@ -4820,11 +4820,11 @@
         "extracted": true,
         "affinda_name": "CPA",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "CPA",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4838,11 +4838,11 @@
         "extracted": true,
         "affinda_name": "Medical license",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Medical license",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4856,11 +4856,11 @@
         "extracted": true,
         "affinda_name": "Forklift operator licence",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Forklift operator licence",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4874,11 +4874,11 @@
         "extracted": true,
         "affinda_name": "Security Clearance (Baseline",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Security Clearance (Baseline",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4892,11 +4892,11 @@
         "extracted": true,
         "affinda_name": "CPR / First Aid certification",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "CPR / First Aid certification",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4909,7 +4909,7 @@
         "source_line": "Bar admission",
         "extracted": false,
         "our_status": null,
-        "our_severity": null,
+        "our_needs_review": null,
         "evidence": "",
         "affinda_name": null,
         "outcome": "affinda_dropped"
@@ -4925,11 +4925,11 @@
         "extracted": true,
         "affinda_name": "CCNA",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "CCNA",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {
@@ -4943,11 +4943,11 @@
         "extracted": true,
         "affinda_name": "Six Sigma Black Belt",
         "our_status": "unknown",
-        "our_severity": "info",
+        "our_needs_review": "no",
         "evidence": "Six Sigma Black Belt",
-        "expected_severity": "info",
+        "expected_needs_review": "no",
         "exact_status_match": true,
-        "severity_match": true,
+        "needs_review_match": true,
         "outcome": "exact"
       },
       {

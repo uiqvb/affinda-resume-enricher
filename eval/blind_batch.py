@@ -19,7 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from resume_enricher import enrich
-from resume_enricher.shared.models import severity_of
+from resume_enricher.shared.models import needs_review_of
 
 OUT = Path(__file__).resolve().parent / "results"
 
@@ -83,19 +83,19 @@ def main():
     for cid, dim, entity, line, expected, is_control, coverage in CASES:
         out = enrich(build_response(dim, entity, line))
         e = out["enrichmentJSON"][LIST_KEY[dim]][0]
-        exp_sev = severity_of(dim, expected)
+        exp_sev = needs_review_of(dim, expected)
         if is_control:
-            verdict = "ok" if e["severity"] == "info" else "FALSE ALARM"
+            verdict = "ok" if e["needsReview"] == "no" else "FALSE ALARM"
         else:  # a problem we should catch
             if e["status"] == expected:
                 verdict = "exact"
-            elif e["severity"] == "warning":
+            elif e["needsReview"] == "yes":
                 verdict = "caught"       # right that it is a problem, different word
             else:
                 verdict = "missed"
         rows.append(dict(id=cid, dim=dim, entity=entity, line=line, coverage=coverage,
                          is_control=is_control, expected=expected,
-                         our_status=e["status"], our_sev=e["severity"], verdict=verdict))
+                         our_status=e["status"], our_sev=e["needsReview"], verdict=verdict))
 
     probs = [r for r in rows if not r["is_control"]]
     ctrls = [r for r in rows if r["is_control"]]

@@ -33,7 +33,7 @@ cost, no waiting, no data leaving the box.
 
 ### 3. We note every item, not just the bad ones
 
-✅ Write a note for every skill, degree, and cert. Tag each one `warning` or `info`.
+✅ Write a note for every skill, degree, and cert. Tag each one `needsReview: yes` or `no`.
 
 💡 The customer can then filter. It is easier to filter than to recover a signal we threw away.
 
@@ -43,7 +43,7 @@ cost, no waiting, no data leaving the box.
 
 ### 4. When unsure, stay quiet
 
-✅ If no cue matches, the item is `info`, never a `warning`.
+✅ If no cue matches, the item is `needsReview: no`, never `yes`.
 
 💡 A false alarm on a good person is the costly mistake. A quiet miss is cheap. We proved
 it: **zero false alarms across 300 resumes.**
@@ -65,7 +65,7 @@ below them. Arrows only point down.
 
 ### 6. Three separate answers per item
 
-✅ `status` (what the text says), `severity` (warning or info), `confidence` (did we find it).
+✅ `status` (what the text says), `needsReview` (yes or no), `confidence` (did we find it).
 
 💡 Keeping them separate keeps the logic honest. Severity is a fixed lookup, so it can
 never drift.

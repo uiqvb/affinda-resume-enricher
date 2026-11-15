@@ -15,4 +15,4 @@ CERT_RULES = [
     ("active",    [r"\bactive\b", r"\bcurrent\b", r"\bin good standing\b", r"\bvalid\b",
                    r"\brenewed\b", r"\brecertified\b"]),
 ]
-# nothing matches -> "unknown" (still emitted, severity "info")
+# nothing matches -> "unknown" (still emitted, needsReview False)

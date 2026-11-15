@@ -63,7 +63,7 @@ def classify_skill(clause: str, skill_name: str) -> tuple[str, str | None, int |
       - position : where those cue words start inside the whole sentence, or None
 
     Rules are tried in priority order (worst/strongest signal first); first hit wins.
-    If no cue matches, the skill is "plain" (still reported, severity "info").
+    If no cue matches, the skill is "plain" (still reported, needsReview False).
     """
     piece_start, piece = _piece_around(clause, skill_name)
     for status, patterns in SKILL_RULES:

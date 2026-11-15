@@ -14,8 +14,8 @@ Affinda extracts the **entity** (skill, degree, certificate). But its schema has
 | Education completion | extracts item, **no completion status** (0 of 94) | recovers a flag on **54/71 (76%)** of problem cases | **13/13 (100%)** controls kept clean |
 | Certificate validity | extracts item, **no validity status** (0 of 84) | recovers a flag on **42/48 (88%)** of problem cases | **29/29 (100%)** controls kept clean |
 
-- **Problem recall** = of items the ground truth marks worth attention (weak/denied skills, unfinished degrees, invalid certs), how many we flagged `warning`.
-- **Control precision** = of genuinely-fine items, how many we correctly left `info`. A false accusation is the costly error, and we had **none**.
+- **Problem recall** = of items the ground truth marks worth attention (weak/denied skills, unfinished degrees, invalid certs), how many we flagged `needsReview: yes`.
+- **Control precision** = of genuinely-fine items, how many we correctly left `needsReview: no`. A false accusation is the costly error, and we had **none**.
 
 ## See it in action
 
@@ -38,9 +38,9 @@ Every résumé, laid out this way: [`results_table.md`](results_table.md).
 | affinda extracted target | 81/92 (88%) |
 | affinda dropped target | 11 |
 | our exact status | 65/81 (80%) |
-| our severity agree | 69/75 (92%) |
-| problem recall flagged warning | 46/52 (88%) |
-| control precision left info | 23/23 (100%) |
+| our needs review agree | 69/75 (92%) |
+| problem recall flagged yes | 46/52 (88%) |
+| control precision left no | 23/23 (100%) |
 | trap precision no false alarm | 6/6 (100%) |
 
 ### Education completion
@@ -52,9 +52,9 @@ Every résumé, laid out this way: [`results_table.md`](results_table.md).
 | affinda extracted target | 84/94 (89%) |
 | affinda dropped target | 10 |
 | our exact status | 62/84 (74%) |
-| our severity agree | 67/84 (80%) |
-| problem recall flagged warning | 54/71 (76%) |
-| control precision left info | 13/13 (100%) |
+| our needs review agree | 67/84 (80%) |
+| problem recall flagged yes | 54/71 (76%) |
+| control precision left no | 13/13 (100%) |
 | trap precision no false alarm | 0/0 |
 
 ### Certificate validity
@@ -66,19 +66,19 @@ Every résumé, laid out this way: [`results_table.md`](results_table.md).
 | affinda extracted target | 77/84 (92%) |
 | affinda dropped target | 7 |
 | our exact status | 65/77 (84%) |
-| our severity agree | 71/77 (92%) |
-| problem recall flagged warning | 42/48 (88%) |
-| control precision left info | 29/29 (100%) |
+| our needs review agree | 71/77 (92%) |
+| problem recall flagged yes | 42/48 (88%) |
+| control precision left no | 29/29 (100%) |
 | trap precision no false alarm | 0/0 |
 
 ## Throughput (sanity check, not a load test)
 
-- 270 résumés; **0.867 ms/résumé** avg (max 3.465 ms), about **1153/sec** single-threaded.
+- 270 résumés; **1.183 ms/résumé** avg (max 5.574 ms), about **845/sec** single-threaded.
 - Stateless, in-process, pure-stdlib function. Scales linearly with cores. Correctness is the story.
 
 ## Honest limitations
 
-- Remaining misses are **lexicon gaps** (phrasings not yet in the cue lists). An unmatched item stays `plain`/`unknown` (`info`): a *miss*, never a false accusation.
+- Remaining misses are **lexicon gaps** (phrasings not yet in the cue lists). An unmatched item stays `plain`/`unknown` (`needsReview: no`): a *miss*, never a false accusation.
 - Multi-item rows (`mixed`, `A + B (distinct)`) are **excluded** (need per-item ground truth).
 - Items Affinda never extracted cannot be enriched (`affinda_dropped_target`; a parser gap).
 

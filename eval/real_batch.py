@@ -70,7 +70,7 @@ def main():
                 sp = (n.get("evidence") or {}).get("rawTextSpan")
                 if sp and sp[1] > sp[0]:
                     located[d] += 1
-                if n.get("severity") == "warning":
+                if n.get("needsReview") == "yes":
                     warnings[d].append((fname, n, clause(n, raw)))
                     fwarn += 1
         per_file.append((fname, fwarn,

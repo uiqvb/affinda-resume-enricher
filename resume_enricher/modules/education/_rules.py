@@ -20,4 +20,4 @@ EDU_RULES = [
     ("completed",   [r"\bgraduated\b", r"\bconferred\b", r"\bawarded\b", r"\bcompleted\b",
                      r"\bearned\b"]),
 ]
-# nothing matches -> "unknown" (still emitted, severity "info")
+# nothing matches -> "unknown" (still emitted, needsReview False)

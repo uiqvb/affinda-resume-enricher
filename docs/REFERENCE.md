@@ -92,7 +92,7 @@ EnrichedJSON
     ├── skills          [ one note per skill ]
     ├── education       [ one note per degree ]
     ├── certifications  [ one note per cert ]
-    └── summary         [ plain-English warning lines ]
+    └── summary         [ plain-English lines, one per needsReview item ]
 ```
 
 Each **note** has the same 6 fields:
@@ -102,14 +102,14 @@ Each **note** has the same 6 fields:
    entity        the item's name, copied back
    status        what the text says   (see the menu below)
    confidence    high  or  low
-   severity      warning  or  info
+   needsReview   yes  or  no
    evidence      the exact words + where they are
 ```
 
 The full **status menu** (every value you can receive):
 
 ```
-            ⚠️  warning (worth a look)              ✅  info (fine / neutral)
+            ⚠️  needsReview: yes (worth a look)     ✅  needsReview: no (fine / neutral)
           ─────────────────────────────────       ──────────────────────────────
   SKILL     no_experience, learning,                strong, intermediate, plain
             lapsed, basic
@@ -118,7 +118,7 @@ The full **status menu** (every value you can receive):
   CERT      expired, revoked, suspended, pending     active, unknown
 ```
 
-`plain` and `unknown` mean "we found nothing worth saying". They are always `info`.
+`plain` and `unknown` mean "we found nothing worth saying". They are always `needsReview: no`.
 
 <br/>
 

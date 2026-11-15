@@ -50,11 +50,11 @@ def enrich(affinda:dict , modules=None):
 
 def _build_summary(enrichment):
 
-    """One plain-English line per WARNING (the stuff a recruiter should see)."""
+    """One plain-English line per item that NEEDS REVIEW (what a recruiter should see)."""
     lines = []
     for key, label in _LABELS.items():
         for e in enrichment[key]:
-            if e["severity"] == "warning":
+            if e["needsReview"] == "yes":
                 pretty = e["status"].replace("_", " ")
                 lines.append(f"{label} '{e['entity']}' looks {pretty}.")
     return lines

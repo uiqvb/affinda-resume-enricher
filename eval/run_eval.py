@@ -5,7 +5,7 @@ résumés with ground truth) and measures the BEFORE vs AFTER story:
 
   BEFORE = Affinda alone: it extracts the entity but attaches NO strength /
            completion / validity qualifier (the gap we exist for).
-  AFTER  = Resume Enricher: we read rawText and attach a status + severity.
+  AFTER  = Resume Enricher: we read rawText and attach a status + needsReview.
 
 Self-contained: needs only this repo (the dataset is committed). Rebuild the
 dataset from the process repo with `python eval/build_dataset.py`.
@@ -32,7 +32,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from resume_enricher import enrich
 from resume_enricher.shared.matching import normalize
-from resume_enricher.shared.models import severity_of
+from resume_enricher.shared.models import needs_review_of
 
 HERE = Path(__file__).resolve().parent
 DATASET = HERE / "data" / "all_resumes.json"
@@ -97,21 +97,21 @@ def score(resume, timings):
     our_list = out["enrichmentJSON"].get(OUR_KEY[dim], [])
     hit = next((e for e in our_list if e["entryIndex"] == idx), None) if idx is not None else None
     if hit is None:
-        row.update(extracted=False, our_status=None, our_severity=None,
+        row.update(extracted=False, our_status=None, our_needs_review=None,
                    evidence="", affinda_name=None, outcome="affinda_dropped")
         return row
 
     row.update(extracted=True, affinda_name=hit["entity"], our_status=hit["status"],
-               our_severity=hit["severity"], evidence=hit["evidence"]["text"])
+               our_needs_review=hit["needsReview"], evidence=hit["evidence"]["text"])
     if mapped == DISTRACTOR:
-        row["outcome"] = "trap_ok" if hit["severity"] == "info" else "trap_false_alarm"
+        row["outcome"] = "trap_ok" if hit["needsReview"] == "no" else "trap_false_alarm"
     else:
-        exp_sev = severity_of(dim, mapped)
-        row["expected_severity"] = exp_sev
+        exp_sev = needs_review_of(dim, mapped)
+        row["expected_needs_review"] = exp_sev
         row["exact_status_match"] = hit["status"] == mapped
-        row["severity_match"] = hit["severity"] == exp_sev
+        row["needs_review_match"] = hit["needsReview"] == exp_sev
         row["outcome"] = ("exact" if hit["status"] == mapped
-                          else "severity_ok" if hit["severity"] == exp_sev else "miss")
+                          else "needs_review_ok" if hit["needsReview"] == exp_sev else "miss")
     return row
 
 
@@ -120,8 +120,8 @@ def summarize(name, rows):
     excluded = sum(1 for r in rows if r.get("outcome") == "excluded_multi_item")
     dropped = sum(1 for r in rows if r.get("outcome") == "affinda_dropped")
     ext = [r for r in scored if r.get("extracted")]
-    problems = [r for r in ext if r.get("expected_severity") == "warning"]
-    controls = [r for r in ext if r.get("expected_severity") == "info"]
+    problems = [r for r in ext if r.get("expected_needs_review") == "yes"]
+    controls = [r for r in ext if r.get("expected_needs_review") == "no"]
     traps = [r for r in ext if r["expected_mapped"] == DISTRACTOR]
 
     def pct(a, b):
@@ -132,12 +132,12 @@ def summarize(name, rows):
             "affinda_extracted_target": pct(len(ext), len(scored)),
             "affinda_dropped_target": dropped,
             "our_exact_status": pct(sum(r.get("exact_status_match") is True for r in ext), len(ext)),
-            "our_severity_agree": pct(sum(r.get("severity_match") is True for r in ext),
-                                      len([r for r in ext if "severity_match" in r])),
-            "problem_recall_flagged_warning": pct(
-                sum(r.get("our_severity") == "warning" for r in problems), len(problems)),
-            "control_precision_left_info": pct(
-                sum(r.get("our_severity") == "info" for r in controls), len(controls)),
+            "our_needs_review_agree": pct(sum(r.get("needs_review_match") is True for r in ext),
+                                      len([r for r in ext if "needs_review_match" in r])),
+            "problem_recall_flagged_yes": pct(
+                sum(r.get("our_needs_review") == "yes" for r in problems), len(problems)),
+            "control_precision_left_no": pct(
+                sum(r.get("our_needs_review") == "no" for r in controls), len(controls)),
             "trap_precision_no_false_alarm": pct(
                 sum(r.get("outcome") == "trap_ok" for r in traps), len(traps))}
 
@@ -147,7 +147,7 @@ def write_table(rows):
     and what the enricher added. Shows exactly where the value is demonstrated."""
     label = {"skill": "Skill", "education": "Degree", "certification": "Certificate"}
     noq = {"skill": "no strength", "education": "no status", "certification": "no validity"}
-    icon = {"warning": "⚠️", "info": "✅"}
+    icon = {"yes": "⚠️", "no": "✅"}
 
     def clean(s, n=None):
         s = (s or "").replace("\n", " ").replace("|", "\\|").strip()
@@ -162,10 +162,10 @@ def write_table(rows):
 
     # CSV — full detail, machine-readable
     cols = ["test_id", "dimension", "entity", "resume_clause", "affinda_returned",
-            "our_status", "severity", "evidence", "verdict"]
+            "our_status", "needsReview", "evidence", "verdict"]
     crows = [[r["test_id"], r["dimension"], r["target"], clean(r.get("source_line")),
               affinda_cell(r, None),
-              r.get("our_status") or "(not extracted)", r.get("our_severity") or "-",
+              r.get("our_status") or "(not extracted)", r.get("our_needs_review") or "-",
               clean(r.get("evidence")), r.get("outcome")]
              for r in rows if r.get("outcome") != "excluded_multi_item"]
     with (OUT / "results_table.csv").open("w", newline="", encoding="utf-8") as f:
@@ -177,10 +177,10 @@ def write_table(rows):
     def our_cell(r):
         if not r.get("extracted"):
             return "⚪ Affinda dropped it, nothing to enrich"
-        return (f'**{r.get("our_status")}** {icon.get(r.get("our_severity"), "")}'
+        return (f'**{r.get("our_status")}** {icon.get(r.get("our_needs_review"), "")}'
                 f' · proof: "{clean(r.get("evidence"), 30)}"')
 
-    order = {"warning": 0, "info": 1, None: 2}
+    order = {"yes": 0, "no": 1, None: 2}
     L = ["# Results: every résumé, before and after\n",
          "For each résumé you can see three things: the line the candidate actually "
          "wrote, what Affinda returned (just the bare item, with no qualifier), and what "
@@ -190,7 +190,7 @@ def write_table(rows):
     for dim in ("skill", "education", "certification"):
         drows = [r for r in rows if r["dimension"] == dim
                  and r.get("outcome") != "excluded_multi_item"]
-        drows.sort(key=lambda r: order.get(r.get("our_severity"), 2))
+        drows.sort(key=lambda r: order.get(r.get("our_needs_review"), 2))
         L.append(f"\n## {label[dim]}s ({len(drows)})\n")
         L.append("| ID | What the candidate wrote | Affinda returned | What we added |")
         L.append("|---|---|---|---|")
@@ -220,19 +220,19 @@ def write_report(summ, rows_by, throughput):
     for name, s in summ.items():
         title, word = labels[name]
         L.append(f"| {title} | extracts item, **no {word}** (0 of {s['scored']}) | "
-                 f"recovers a flag on **{s['problem_recall_flagged_warning']}** of problem cases | "
-                 f"**{s['control_precision_left_info']}** controls kept clean |")
+                 f"recovers a flag on **{s['problem_recall_flagged_yes']}** of problem cases | "
+                 f"**{s['control_precision_left_no']}** controls kept clean |")
     L += ["", "- **Problem recall** = of items the ground truth marks worth attention "
-          "(weak/denied skills, unfinished degrees, invalid certs), how many we flagged `warning`.",
+          "(weak/denied skills, unfinished degrees, invalid certs), how many we flagged `needsReview: yes`.",
           "- **Control precision** = of genuinely-fine items, how many we correctly left "
-          "`info`. A false accusation is the costly error, and we had **none**.\n"]
+          "`needsReview: no`. A false accusation is the costly error, and we had **none**.\n"]
 
     # See it in action: one real caught-problem per dimension (clause -> before -> after)
     L += ["## See it in action\n",
           "| What the candidate wrote | Affinda returned | What we added |",
           "|---|---|---|"]
     for dim in ("skill", "education", "certification"):
-        ex = next((r for r in rows_by[dim] if r.get("our_severity") == "warning"
+        ex = next((r for r in rows_by[dim] if r.get("our_needs_review") == "yes"
                    and r.get("source_line") and r.get("evidence")), None)
         if ex:
             clause = (ex["source_line"] or "").replace("\n", " ").replace("|", "\\|")
@@ -254,7 +254,7 @@ def write_report(summ, rows_by, throughput):
           "Correctness is the story.\n",
           "## Honest limitations\n",
           "- Remaining misses are **lexicon gaps** (phrasings not yet in the cue lists). "
-          "An unmatched item stays `plain`/`unknown` (`info`): a *miss*, never a false accusation.",
+          "An unmatched item stays `plain`/`unknown` (`needsReview: no`): a *miss*, never a false accusation.",
           "- Multi-item rows (`mixed`, `A + B (distinct)`) are **excluded** (need per-item ground truth).",
           "- Items Affinda never extracted cannot be enriched (`affinda_dropped_target`; a parser gap).",
           "\nFull per-résumé output: [`results_table.md`](results_table.md)."]

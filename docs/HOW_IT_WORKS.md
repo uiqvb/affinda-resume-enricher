@@ -104,7 +104,7 @@ Every item gets **three simple answers**:
 │ STATUS     │  what does the text say?      │  from the cue rules       │
 ├────────────┼───────────────────────────────┼──────────────────────────┤
 │ SEVERITY   │  should a reader care?        │  a fixed table lookup     │
-│            │                               │  warning  or  info        │
+│            │                               │  needsReview: yes or no   │
 ├────────────┼───────────────────────────────┼──────────────────────────┤
 │ CONFIDENCE │  did we find it in the text?  │  high (yes) / low (no)    │
 └────────────┴───────────────────────────────┴──────────────────────────┘
@@ -115,8 +115,8 @@ Every item gets **three simple answers**:
 **Severity** is never decided freshly. It is a fixed lookup:
 
 ```
-   warning  =  no_experience, learning, incomplete, expired, revoked ...
-   info     =  strong, completed, active, plain, unknown ...
+   yes  =  no_experience, learning, incomplete, expired, revoked ...
+   no   =  strong, completed, active, plain, unknown ...
 ```
 
 **Confidence** just says whether we found the item at all.
@@ -137,7 +137,7 @@ If we are ever unsure, we **stay quiet**. We never guess.
 
 ```mermaid
 flowchart TD
-    A{"Found the item?"}:::q -->|"no"| Q["stay quiet<br/>info, never a warning"]:::g
+    A{"Found the item?"}:::q -->|"no"| Q["stay quiet<br/>needsReview: no, never yes"]:::g
     A -->|"yes"| B{"A cue word matched?"}:::q
     B -->|"no"| Q
     B -->|"yes"| S["give the real status"]:::b
@@ -161,7 +161,7 @@ It never means we **accuse** a good person.
       We copy it, work on the copy, and check at the end that the original is untouched.
 
   ②  When unsure, we stay silent.
-      No crash on missing text. No guess. Just "info".
+      No crash on missing text. No guess. Just needsReview "no".
 ```
 
 <br/>
@@ -190,7 +190,7 @@ Watch `SQL` go through the three steps:
 
 ③ TAG
      status     = no_experience
-     severity   = warning        (fixed lookup)
+     needsReview = yes            (fixed lookup)
      confidence = high           (we found it)
      evidence   = "no experience" at characters 8 to 21
 ```
@@ -198,7 +198,7 @@ Watch `SQL` go through the three steps:
 Final note:
 
 ```
-SQL   ->   no_experience | warning | high | proof: "no experience"
+SQL   ->   no_experience | yes | high | proof: "no experience"
 ```
 
 And because Python sat in a **different piece**, it scored **strong**, all on its own.

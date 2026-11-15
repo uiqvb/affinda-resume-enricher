@@ -23,4 +23,4 @@ SKILL_RULES = [
                        r"\bproficient\b", r"\bseasoned\b", r"\b\d+\+?\s*years?\b",
                        r"\bdeep (experience|expertise)\b"]),
 ]
-# nothing matches -> "plain" (still emitted, severity "info")
+# nothing matches -> "plain" (still emitted, needsReview False)

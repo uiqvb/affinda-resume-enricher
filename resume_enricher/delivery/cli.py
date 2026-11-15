@@ -23,7 +23,7 @@ from resume_enricher import enrich
 
 app = typer.Typer(
     add_completion=False,
-    help="Resume Enricher — enrich Affinda resume JSON with status, severity and evidence.",
+    help="Resume Enricher — enrich Affinda resume JSON with status, needsReview and evidence.",
 )
 
 

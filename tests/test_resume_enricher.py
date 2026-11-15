@@ -26,7 +26,7 @@ from resume_enricher import enrich
 from resume_enricher.modules.skill._classify import classify_skill
 from resume_enricher.shared.locator import locate
 from resume_enricher.shared.matching import exact_token_find, normalize, normalize_mapped
-from resume_enricher.shared.models import build_evidence, severity_of
+from resume_enricher.shared.models import build_evidence, needs_review_of
 from resume_enricher.shared.validators import deep_copy, ensure_untouched, validate_input
 
 
@@ -142,18 +142,18 @@ class CertificationStatus(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
-# 5. The severity menu (models.py)
+# 5. The needs-review menu (models.py)
 # ---------------------------------------------------------------------------
-class SeverityMenu(unittest.TestCase):
-    def test_a_bad_status_is_a_warning(self):
-        self.assertEqual(severity_of("skill", "no_experience"), "warning")
+class NeedsReviewMenu(unittest.TestCase):
+    def test_a_bad_status_needs_review(self):
+        self.assertEqual(needs_review_of("skill", "no_experience"), "yes")
 
-    def test_a_fine_status_is_info(self):
-        self.assertEqual(severity_of("skill", "strong"), "info")
+    def test_a_fine_status_does_not_need_review(self):
+        self.assertEqual(needs_review_of("skill", "strong"), "no")
 
     def test_an_unknown_status_fails_loudly(self):
         with self.assertRaises(ValueError):
-            severity_of("skill", "totally_made_up")
+            needs_review_of("skill", "totally_made_up")
 
 
 # ---------------------------------------------------------------------------

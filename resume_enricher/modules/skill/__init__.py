@@ -1,14 +1,14 @@
 """Skill module — the PUBLIC door: run(skills, rawText).
 
 For every skill Affinda extracted: find it in the text, read the sentence, decide
-its status (using the precision guard), and build one Enrichment (severity-stamped),
+its status (using the precision guard), and build one Enrichment (review-stamped),
 with the proof highlight pointing at the exact cue words we matched.
 """
 from __future__ import annotations
 
 from resume_enricher.modules.skill._classify import classify_skill
 from resume_enricher.shared.locator import locate
-from resume_enricher.shared.models import Enrichment, build_evidence, severity_of
+from resume_enricher.shared.models import Enrichment, build_evidence, needs_review_of
 
 
 def run(skills, raw_text):
@@ -26,7 +26,7 @@ def run(skills, raw_text):
                 entity=name,
                 status=status,
                 confidence="high" if span else "low",
-                severity=severity_of("skill", status),
+                needsReview=needs_review_of("skill", status),
                 evidence=build_evidence(name, matched, pos, clause_start, span),
             ).to_dict()
         )

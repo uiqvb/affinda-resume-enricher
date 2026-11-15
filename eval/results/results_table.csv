@@ -1,271 +1,271 @@
-test_id,dimension,entity,resume_clause,affinda_returned,our_status,severity,evidence,verdict
-S001,skill,Python,Expert in Python,Python (Programming Language) (no strength),strong,info,Expert,exact
-S002,skill,Java,8+ years of Java,Java (Programming Language) (no strength),strong,info,8+ years,exact
-S003,skill,SQL,Advanced SQL,SQL (Programming Language) (no strength),strong,info,Advanced,exact
-S004,skill,AWS,Expert in AWS,Amazon Web Services (no strength),strong,info,Expert,exact
+test_id,dimension,entity,resume_clause,affinda_returned,our_status,needsReview,evidence,verdict
+S001,skill,Python,Expert in Python,Python (Programming Language) (no strength),strong,no,Expert,exact
+S002,skill,Java,8+ years of Java,Java (Programming Language) (no strength),strong,no,8+ years,exact
+S003,skill,SQL,Advanced SQL,SQL (Programming Language) (no strength),strong,no,Advanced,exact
+S004,skill,AWS,Expert in AWS,Amazon Web Services (no strength),strong,no,Expert,exact
 S005,skill,Azure,8+ years of Azure,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S006,skill,Kubernetes,Advanced Kubernetes,Kubernetes (no strength),strong,info,Advanced,exact
-S007,skill,Docker,Expert in Docker,Docker (Software) (no strength),strong,info,Expert,exact
-S008,skill,React,8+ years of React,React.js (Javascript Library) (no strength),strong,info,8+ years,exact
-S009,skill,Go,Proficient in Go,Go (no strength),strong,info,Proficient,exact
+S006,skill,Kubernetes,Advanced Kubernetes,Kubernetes (no strength),strong,no,Advanced,exact
+S007,skill,Docker,Expert in Docker,Docker (Software) (no strength),strong,no,Expert,exact
+S008,skill,React,8+ years of React,React.js (Javascript Library) (no strength),strong,no,8+ years,exact
+S009,skill,Go,Proficient in Go,Go (no strength),strong,no,Proficient,exact
 S010,skill,Tableau,Strong Tableau experience,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S011,skill,Spark,Solid Spark,Solid Spark (no strength),intermediate,info,Solid,severity_ok
-S012,skill,TypeScript,Proficient in TypeScript,TypeScript (no strength),strong,info,Proficient,exact
-S013,skill,Python,Strong Python experience,Python (Programming Language) (no strength),strong,info,Strong,exact
-S014,skill,Java,Solid Java,Solid Java (no strength),intermediate,info,Solid,severity_ok
-S015,skill,SQL,Proficient in SQL,SQL (Programming Language) (no strength),strong,info,Proficient,exact
-S016,skill,AWS,Strong AWS experience,Amazon Web Services (no strength),strong,info,Strong,exact
-S017,skill,Azure,Working knowledge of Azure,Microsoft Azure (no strength),intermediate,info,Working knowledge,exact
-S018,skill,Kubernetes,Hands-on Kubernetes,Kubernetes (no strength),intermediate,info,Hands-on,exact
-S019,skill,Docker,Comfortable with Docker,Docker (Software) (no strength),intermediate,info,Comfortable with,exact
-S020,skill,React,Working knowledge of React,React.js (Javascript Library) (no strength),intermediate,info,Working knowledge,exact
-S021,skill,Go,Hands-on Go,Go (no strength),intermediate,info,Hands-on,exact
+S011,skill,Spark,Solid Spark,Solid Spark (no strength),intermediate,no,Solid,needs_review_ok
+S012,skill,TypeScript,Proficient in TypeScript,TypeScript (no strength),strong,no,Proficient,exact
+S013,skill,Python,Strong Python experience,Python (Programming Language) (no strength),strong,no,Strong,exact
+S014,skill,Java,Solid Java,Solid Java (no strength),intermediate,no,Solid,needs_review_ok
+S015,skill,SQL,Proficient in SQL,SQL (Programming Language) (no strength),strong,no,Proficient,exact
+S016,skill,AWS,Strong AWS experience,Amazon Web Services (no strength),strong,no,Strong,exact
+S017,skill,Azure,Working knowledge of Azure,Microsoft Azure (no strength),intermediate,no,Working knowledge,exact
+S018,skill,Kubernetes,Hands-on Kubernetes,Kubernetes (no strength),intermediate,no,Hands-on,exact
+S019,skill,Docker,Comfortable with Docker,Docker (Software) (no strength),intermediate,no,Comfortable with,exact
+S020,skill,React,Working knowledge of React,React.js (Javascript Library) (no strength),intermediate,no,Working knowledge,exact
+S021,skill,Go,Hands-on Go,Go (no strength),intermediate,no,Hands-on,exact
 S022,skill,Tableau,Comfortable with Tableau,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S023,skill,Spark,Working knowledge of Spark,Apache Spark (no strength),intermediate,info,Working knowledge,exact
-S024,skill,TypeScript,Hands-on TypeScript,TypeScript (no strength),intermediate,info,Hands-on,exact
-S025,skill,Python,Basic Python,Python (Programming Language) (no strength),basic,warning,Basic,exact
-S026,skill,Java,Familiar with Java,Java (Programming Language) (no strength),basic,warning,Familiar with,exact
-S027,skill,SQL,Some SQL,SQL (Programming Language) (no strength),basic,warning,Some,exact
-S028,skill,AWS,Basic AWS,Amazon Web Services (no strength),basic,warning,Basic,exact
-S029,skill,Azure,Familiar with Azure,Microsoft Azure (no strength),basic,warning,Familiar with,exact
-S030,skill,Kubernetes,Some Kubernetes,Kubernetes (no strength),basic,warning,Some,exact
-S031,skill,Docker,Basic Docker,Docker (Software) (no strength),basic,warning,Basic,exact
-S032,skill,React,Familiar with React,React.js (Javascript Library) (no strength),basic,warning,Familiar with,exact
-S033,skill,Go,Some Go,Go (no strength),basic,warning,Some,exact
-S034,skill,Tableau,Basic Tableau,Tableau (Business Intelligence Software) (no strength),basic,warning,Basic,exact
+S023,skill,Spark,Working knowledge of Spark,Apache Spark (no strength),intermediate,no,Working knowledge,exact
+S024,skill,TypeScript,Hands-on TypeScript,TypeScript (no strength),intermediate,no,Hands-on,exact
+S025,skill,Python,Basic Python,Python (Programming Language) (no strength),basic,yes,Basic,exact
+S026,skill,Java,Familiar with Java,Java (Programming Language) (no strength),basic,yes,Familiar with,exact
+S027,skill,SQL,Some SQL,SQL (Programming Language) (no strength),basic,yes,Some,exact
+S028,skill,AWS,Basic AWS,Amazon Web Services (no strength),basic,yes,Basic,exact
+S029,skill,Azure,Familiar with Azure,Microsoft Azure (no strength),basic,yes,Familiar with,exact
+S030,skill,Kubernetes,Some Kubernetes,Kubernetes (no strength),basic,yes,Some,exact
+S031,skill,Docker,Basic Docker,Docker (Software) (no strength),basic,yes,Basic,exact
+S032,skill,React,Familiar with React,React.js (Javascript Library) (no strength),basic,yes,Familiar with,exact
+S033,skill,Go,Some Go,Go (no strength),basic,yes,Some,exact
+S034,skill,Tableau,Basic Tableau,Tableau (Business Intelligence Software) (no strength),basic,yes,Basic,exact
 S035,skill,Spark,Exposure to Spark,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S036,skill,TypeScript,Limited exposure to TypeScript,TypeScript (no strength),basic,warning,Limited,exact
-S037,skill,Python,Brief exposure to Python,Python (Programming Language) (no strength),basic,warning,Brief,exact
-S038,skill,Java,Exposure to Java,Java (Programming Language) (no strength),basic,warning,Exposure to,exact
-S039,skill,SQL,Limited exposure to SQL,SQL (Programming Language) (no strength),basic,warning,Limited,exact
-S040,skill,AWS,Brief exposure to AWS,Amazon Web Services (no strength),basic,warning,Brief,exact
+S036,skill,TypeScript,Limited exposure to TypeScript,TypeScript (no strength),basic,yes,Limited,exact
+S037,skill,Python,Brief exposure to Python,Python (Programming Language) (no strength),basic,yes,Brief,exact
+S038,skill,Java,Exposure to Java,Java (Programming Language) (no strength),basic,yes,Exposure to,exact
+S039,skill,SQL,Limited exposure to SQL,SQL (Programming Language) (no strength),basic,yes,Limited,exact
+S040,skill,AWS,Brief exposure to AWS,Amazon Web Services (no strength),basic,yes,Brief,exact
 S041,skill,Azure,Exposure to Azure,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S042,skill,Kubernetes,Limited exposure to Kubernetes,Kubernetes (no strength),basic,warning,Limited,exact
-S043,skill,Docker,Brief exposure to Docker,Docker (Software) (no strength),basic,warning,Brief,exact
-S044,skill,React,Exposure to React,React.js (Javascript Library) (no strength),basic,warning,Exposure to,exact
-S045,skill,Go,Limited exposure to Go,Go (no strength),basic,warning,Limited,exact
+S042,skill,Kubernetes,Limited exposure to Kubernetes,Kubernetes (no strength),basic,yes,Limited,exact
+S043,skill,Docker,Brief exposure to Docker,Docker (Software) (no strength),basic,yes,Brief,exact
+S044,skill,React,Exposure to React,React.js (Javascript Library) (no strength),basic,yes,Exposure to,exact
+S045,skill,Go,Limited exposure to Go,Go (no strength),basic,yes,Limited,exact
 S046,skill,Tableau,Brief exposure to Tableau,✗ not in Affinda output,(not extracted),-,,affinda_dropped
 S047,skill,Spark,Currently learning Spark,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S048,skill,TypeScript,Studying TypeScript,TypeScript (no strength),learning,warning,Studying,exact
-S049,skill,Python,Learning Python in my spare time,Python (Programming Language) (no strength),learning,warning,Learning,exact
-S050,skill,Java,Currently learning Java,Java (Programming Language) (no strength),learning,warning,Currently learning,exact
-S051,skill,SQL,Studying SQL,SQL (Programming Language) (no strength),learning,warning,Studying,exact
-S052,skill,AWS,Learning AWS in my spare time,Amazon Web Services (no strength),learning,warning,Learning,exact
+S048,skill,TypeScript,Studying TypeScript,TypeScript (no strength),learning,yes,Studying,exact
+S049,skill,Python,Learning Python in my spare time,Python (Programming Language) (no strength),learning,yes,Learning,exact
+S050,skill,Java,Currently learning Java,Java (Programming Language) (no strength),learning,yes,Currently learning,exact
+S051,skill,SQL,Studying SQL,SQL (Programming Language) (no strength),learning,yes,Studying,exact
+S052,skill,AWS,Learning AWS in my spare time,Amazon Web Services (no strength),learning,yes,Learning,exact
 S053,skill,Azure,Currently learning Azure,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S054,skill,Kubernetes,Studying Kubernetes,Kubernetes (no strength),learning,warning,Studying,exact
-S055,skill,Docker,Learning Docker in my spare time,Docker (Software) (no strength),learning,warning,Learning,exact
-S056,skill,React,Currently learning React,React.js (Javascript Library) (no strength),learning,warning,Currently learning,exact
-S057,skill,Go,"Theoretical knowledge of Go, no practical experience",Go (no strength),plain,info,Go,miss
-S058,skill,Tableau,"Academic Tableau only, no production use",Tableau (Business Intelligence Software) (no strength),plain,info,Tableau (Business Intelligence Software),miss
-S059,skill,Spark,"Theoretical knowledge of Spark, no practical experience",Apache Spark (no strength),plain,info,Apache Spark,miss
-S060,skill,TypeScript,"Academic TypeScript only, no production use",TypeScript (no strength),plain,info,TypeScript,miss
-S061,skill,Python,"Theoretical knowledge of Python, no practical experience",Python (Programming Language) (no strength),plain,info,Python (Programming Language),miss
-S062,skill,Java,"Academic Java only, no production use",Java (Programming Language) (no strength),plain,info,Java (Programming Language),miss
-S063,skill,SQL,"Previously used SQL, not in recent years",SQL (Programming Language) (no strength),lapsed,warning,Previously,exact
-S064,skill,AWS,Used AWS years ago,Amazon Web Services (no strength),lapsed,warning,years ago,exact
+S054,skill,Kubernetes,Studying Kubernetes,Kubernetes (no strength),learning,yes,Studying,exact
+S055,skill,Docker,Learning Docker in my spare time,Docker (Software) (no strength),learning,yes,Learning,exact
+S056,skill,React,Currently learning React,React.js (Javascript Library) (no strength),learning,yes,Currently learning,exact
+S057,skill,Go,"Theoretical knowledge of Go, no practical experience",Go (no strength),plain,no,Go,miss
+S058,skill,Tableau,"Academic Tableau only, no production use",Tableau (Business Intelligence Software) (no strength),plain,no,Tableau (Business Intelligence Software),miss
+S059,skill,Spark,"Theoretical knowledge of Spark, no practical experience",Apache Spark (no strength),plain,no,Apache Spark,miss
+S060,skill,TypeScript,"Academic TypeScript only, no production use",TypeScript (no strength),plain,no,TypeScript,miss
+S061,skill,Python,"Theoretical knowledge of Python, no practical experience",Python (Programming Language) (no strength),plain,no,Python (Programming Language),miss
+S062,skill,Java,"Academic Java only, no production use",Java (Programming Language) (no strength),plain,no,Java (Programming Language),miss
+S063,skill,SQL,"Previously used SQL, not in recent years",SQL (Programming Language) (no strength),lapsed,yes,Previously,exact
+S064,skill,AWS,Used AWS years ago,Amazon Web Services (no strength),lapsed,yes,years ago,exact
 S065,skill,Azure,Formerly worked with Azure,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S066,skill,Kubernetes,"Previously used Kubernetes, not in recent years",Kubernetes (no strength),lapsed,warning,Previously,exact
-S067,skill,Docker,Used Docker years ago,Docker (Software) (no strength),lapsed,warning,years ago,exact
-S068,skill,React,Formerly worked with React,React.js (Javascript Library) (no strength),lapsed,warning,Formerly,exact
-S069,skill,Go,"Previously used Go, not in recent years",Go (no strength),lapsed,warning,Previously,exact
+S066,skill,Kubernetes,"Previously used Kubernetes, not in recent years",Kubernetes (no strength),lapsed,yes,Previously,exact
+S067,skill,Docker,Used Docker years ago,Docker (Software) (no strength),lapsed,yes,years ago,exact
+S068,skill,React,Formerly worked with React,React.js (Javascript Library) (no strength),lapsed,yes,Formerly,exact
+S069,skill,Go,"Previously used Go, not in recent years",Go (no strength),lapsed,yes,Previously,exact
 S070,skill,Tableau,Used Tableau years ago,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S071,skill,Spark,No experience with Spark,Apache Spark (no strength),no_experience,warning,No experience,exact
-S072,skill,TypeScript,Not proficient in TypeScript,TypeScript (no strength),no_experience,warning,Not proficient,exact
-S073,skill,Python,Python: none,Python (Programming Language) (no strength),no_experience,warning,: none,exact
-S074,skill,Java,Without any Java background,Java background (no strength),no_experience,warning,Without any Java background,exact
-S075,skill,SQL,No experience with SQL,SQL (Programming Language) (no strength),no_experience,warning,No experience,exact
-S076,skill,AWS,Not proficient in AWS,Amazon Web Services (no strength),no_experience,warning,Not proficient,exact
+S071,skill,Spark,No experience with Spark,Apache Spark (no strength),no_experience,yes,No experience,exact
+S072,skill,TypeScript,Not proficient in TypeScript,TypeScript (no strength),no_experience,yes,Not proficient,exact
+S073,skill,Python,Python: none,Python (Programming Language) (no strength),no_experience,yes,: none,exact
+S074,skill,Java,Without any Java background,Java background (no strength),no_experience,yes,Without any Java background,exact
+S075,skill,SQL,No experience with SQL,SQL (Programming Language) (no strength),no_experience,yes,No experience,exact
+S076,skill,AWS,Not proficient in AWS,Amazon Web Services (no strength),no_experience,yes,Not proficient,exact
 S077,skill,Azure,Azure: none,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-S078,skill,Kubernetes,Without any Kubernetes background,Kubernetes (no strength),no_experience,warning,Without any Kubernetes background,exact
-S079,skill,Docker,No experience with Docker,Docker (Software) (no strength),no_experience,warning,No experience,exact
-S080,skill,React,Not proficient in React,React.js (Javascript Library) (no strength),no_experience,warning,Not proficient,exact
-S089,skill,Azure,Interested in Azure,Microsoft Azure (no strength),learning,warning,Interested in,exact
-S090,skill,Kubernetes,Keen to learn Kubernetes,Kubernetes (no strength),learning,warning,Keen to learn,exact
-S091,skill,Docker,Interested in Docker,Docker (Software) (no strength),learning,warning,Interested in,exact
-S092,skill,React,Keen to learn React,React.js (Javascript Library) (no strength),learning,warning,Keen to learn,exact
-S093,skill,Go,"Not certified in Go, but use Go daily",Go (no strength),plain,info,Go,severity_ok
-S094,skill,Tableau,"Not certified in Tableau, but use Tableau daily",Tableau (Business Intelligence Software) (no strength),plain,info,Tableau (Business Intelligence Software),severity_ok
-S095,skill,Spark,No experience with Java; expert in Spark,Apache Spark (no strength),strong,info,expert,trap_ok
-S096,skill,TypeScript,Migrated away from Python to TypeScript,TypeScript (no strength),plain,info,TypeScript,trap_ok
-S097,skill,Python,Replaced TypeScript with Python across the stack,Python (Programming Language) (no strength),plain,info,Python (Programming Language),trap_ok
-S098,skill,Java,No experience with Spark; expert in Java,Java (Programming Language) (no strength),strong,info,expert,trap_ok
-S099,skill,SQL,Migrated away from Tableau to SQL,SQL (Programming Language) (no strength),plain,info,SQL (Programming Language),trap_ok
-S100,skill,AWS,Replaced Go with AWS across the stack,Amazon Web Services (no strength),plain,info,Amazon Web Services,trap_ok
-E001,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University, 2018",Bachelor of Science (no status),unknown,info,Bachelor of Science,severity_ok
-E002,education,Master of Engineering,Master of Engineering — Northgate Institute (graduated 2019),Master of Engineering (no status),completed,info,graduated,exact
-E003,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, conferred 2020",Juris Doctor (JD (no status),completed,info,conferred,exact
-E004,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) (2021), Summit State University",Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,severity_ok
-E005,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, 2022",PhD (no status),unknown,info,PhD,severity_ok
-E006,education,Associate of Arts,Associate of Arts — Riverside University (graduated 2018),Associate of Arts (no status),completed,info,graduated,exact
-E007,education,MBA,"MBA, Northgate Institute, conferred 2019",MBA (no status),completed,info,conferred,exact
-E008,education,Bachelor of Nursing,"Bachelor of Nursing (2020), Lakeside College",Bachelor of Nursing (no status),unknown,info,Bachelor of Nursing,severity_ok
-E009,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, 2021",Diploma (no status),unknown,info,Diploma,severity_ok
+S078,skill,Kubernetes,Without any Kubernetes background,Kubernetes (no strength),no_experience,yes,Without any Kubernetes background,exact
+S079,skill,Docker,No experience with Docker,Docker (Software) (no strength),no_experience,yes,No experience,exact
+S080,skill,React,Not proficient in React,React.js (Javascript Library) (no strength),no_experience,yes,Not proficient,exact
+S089,skill,Azure,Interested in Azure,Microsoft Azure (no strength),learning,yes,Interested in,exact
+S090,skill,Kubernetes,Keen to learn Kubernetes,Kubernetes (no strength),learning,yes,Keen to learn,exact
+S091,skill,Docker,Interested in Docker,Docker (Software) (no strength),learning,yes,Interested in,exact
+S092,skill,React,Keen to learn React,React.js (Javascript Library) (no strength),learning,yes,Keen to learn,exact
+S093,skill,Go,"Not certified in Go, but use Go daily",Go (no strength),plain,no,Go,needs_review_ok
+S094,skill,Tableau,"Not certified in Tableau, but use Tableau daily",Tableau (Business Intelligence Software) (no strength),plain,no,Tableau (Business Intelligence Software),needs_review_ok
+S095,skill,Spark,No experience with Java; expert in Spark,Apache Spark (no strength),strong,no,expert,trap_ok
+S096,skill,TypeScript,Migrated away from Python to TypeScript,TypeScript (no strength),plain,no,TypeScript,trap_ok
+S097,skill,Python,Replaced TypeScript with Python across the stack,Python (Programming Language) (no strength),plain,no,Python (Programming Language),trap_ok
+S098,skill,Java,No experience with Spark; expert in Java,Java (Programming Language) (no strength),strong,no,expert,trap_ok
+S099,skill,SQL,Migrated away from Tableau to SQL,SQL (Programming Language) (no strength),plain,no,SQL (Programming Language),trap_ok
+S100,skill,AWS,Replaced Go with AWS across the stack,Amazon Web Services (no strength),plain,no,Amazon Web Services,trap_ok
+E001,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University, 2018",Bachelor of Science (no status),unknown,no,Bachelor of Science,needs_review_ok
+E002,education,Master of Engineering,Master of Engineering — Northgate Institute (graduated 2019),Master of Engineering (no status),completed,no,graduated,exact
+E003,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, conferred 2020",Juris Doctor (JD (no status),completed,no,conferred,exact
+E004,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) (2021), Summit State University",Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,needs_review_ok
+E005,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, 2022",PhD (no status),unknown,no,PhD,needs_review_ok
+E006,education,Associate of Arts,Associate of Arts — Riverside University (graduated 2018),Associate of Arts (no status),completed,no,graduated,exact
+E007,education,MBA,"MBA, Northgate Institute, conferred 2019",MBA (no status),completed,no,conferred,exact
+E008,education,Bachelor of Nursing,"Bachelor of Nursing (2020), Lakeside College",Bachelor of Nursing (no status),unknown,no,Bachelor of Nursing,needs_review_ok
+E009,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, 2021",Diploma (no status),unknown,no,Diploma,needs_review_ok
 E010,education,Certificate IV in Cybersecurity,Certificate IV in Cybersecurity — Harbour Polytechnic (graduated 2022),✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E011,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — currently enrolled",Bachelor of Science (no status),in_progress,warning,currently enrolled,exact
-E012,education,Master of Engineering,"Master of Engineering (in progress), Northgate Institute",Master of Engineering (no status),in_progress,warning,in progress,exact
-E013,education,Juris Doctor (JD),"Pursuing Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),in_progress,warning,Pursuing,exact
-E014,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University, 2021–present",Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,miss
-E015,education,PhD in Chemistry,"Candidate for PhD in Chemistry, Harbour Polytechnic",PhD (no status),in_progress,warning,Candidate for,exact
-E016,education,Associate of Arts,"Studying towards Associate of Arts, Riverside University",Associate of Arts (no status),in_progress,warning,Studying towards,exact
-E017,education,MBA,"MBA, Northgate Institute — ongoing",MBA (no status),in_progress,warning,ongoing,exact
-E018,education,Bachelor of Nursing,"Currently completing Bachelor of Nursing, Lakeside College",Bachelor of Nursing (no status),unknown,info,Bachelor of Nursing,miss
-E019,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — currently enrolled",Diploma (no status),in_progress,warning,currently enrolled,exact
+E011,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — currently enrolled",Bachelor of Science (no status),in_progress,yes,currently enrolled,exact
+E012,education,Master of Engineering,"Master of Engineering (in progress), Northgate Institute",Master of Engineering (no status),in_progress,yes,in progress,exact
+E013,education,Juris Doctor (JD),"Pursuing Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),in_progress,yes,Pursuing,exact
+E014,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University, 2021–present",Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,miss
+E015,education,PhD in Chemistry,"Candidate for PhD in Chemistry, Harbour Polytechnic",PhD (no status),in_progress,yes,Candidate for,exact
+E016,education,Associate of Arts,"Studying towards Associate of Arts, Riverside University",Associate of Arts (no status),in_progress,yes,Studying towards,exact
+E017,education,MBA,"MBA, Northgate Institute — ongoing",MBA (no status),in_progress,yes,ongoing,exact
+E018,education,Bachelor of Nursing,"Currently completing Bachelor of Nursing, Lakeside College",Bachelor of Nursing (no status),unknown,no,Bachelor of Nursing,miss
+E019,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — currently enrolled",Diploma (no status),in_progress,yes,currently enrolled,exact
 E020,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity (in progress), Harbour Polytechnic",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E021,education,Bachelor of Science in Computer Science,"Pursuing Bachelor of Science in Computer Science, Riverside University",Bachelor of Science (no status),in_progress,warning,Pursuing,exact
-E022,education,Master of Engineering,"Master of Engineering, Northgate Institute, 2019–present",Master of Engineering (no status),unknown,info,Master of Engineering,miss
-E023,education,Juris Doctor (JD),"Candidate for Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),in_progress,warning,Candidate for,exact
-E024,education,Doctor of Medicine (MD),"Studying towards Doctor of Medicine (MD), Summit State University",Doctor of Medicine (MD (no status),in_progress,warning,Studying towards,exact
-E025,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — ongoing",PhD (no status),in_progress,warning,ongoing,exact
-E026,education,Associate of Arts,"Currently completing Associate of Arts, Riverside University",Associate of Arts (no status),unknown,info,Associate of Arts,miss
-E027,education,MBA,"MBA, Northgate Institute — expected 2029",MBA (no status),expected,warning,expected,exact
-E028,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, anticipated graduation 2027",Bachelor of Nursing (no status),unknown,info,Bachelor of Nursing,miss
-E029,education,Diploma in Accounting,"Diploma in Accounting — expected completion 2028, Summit State University",Diploma (no status),expected,warning,expected,exact
+E021,education,Bachelor of Science in Computer Science,"Pursuing Bachelor of Science in Computer Science, Riverside University",Bachelor of Science (no status),in_progress,yes,Pursuing,exact
+E022,education,Master of Engineering,"Master of Engineering, Northgate Institute, 2019–present",Master of Engineering (no status),unknown,no,Master of Engineering,miss
+E023,education,Juris Doctor (JD),"Candidate for Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),in_progress,yes,Candidate for,exact
+E024,education,Doctor of Medicine (MD),"Studying towards Doctor of Medicine (MD), Summit State University",Doctor of Medicine (MD (no status),in_progress,yes,Studying towards,exact
+E025,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — ongoing",PhD (no status),in_progress,yes,ongoing,exact
+E026,education,Associate of Arts,"Currently completing Associate of Arts, Riverside University",Associate of Arts (no status),unknown,no,Associate of Arts,miss
+E027,education,MBA,"MBA, Northgate Institute — expected 2029",MBA (no status),expected,yes,expected,exact
+E028,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, anticipated graduation 2027",Bachelor of Nursing (no status),unknown,no,Bachelor of Nursing,miss
+E029,education,Diploma in Accounting,"Diploma in Accounting — expected completion 2028, Summit State University",Diploma (no status),expected,yes,expected,exact
 E030,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity, Harbour Polytechnic (graduating 2029)",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E031,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — due 2027",Bachelor of Science (no status),expected,warning,due,exact
-E032,education,Master of Engineering,"Master of Engineering, Northgate Institute — expected 2028",Master of Engineering (no status),expected,warning,expected,exact
-E033,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, anticipated graduation 2029",Juris Doctor (JD (no status),expected,warning,anticipated,exact
-E034,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) — expected completion 2027, Summit State University",Doctor of Medicine (MD (no status),expected,warning,expected,exact
-E035,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic (graduating 2028)",PhD (no status),expected,warning,graduating,exact
-E036,education,Associate of Arts,"Associate of Arts, Riverside University — due 2029",Associate of Arts (no status),expected,warning,due,exact
-E037,education,MBA,"MBA, Northgate Institute — expected 2027",MBA (no status),expected,warning,expected,exact
-E038,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, anticipated graduation 2028",Bachelor of Nursing (no status),expected,warning,anticipated,exact
-E039,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — discontinued before completion",Diploma (no status),incomplete,warning,discontinued,exact
+E031,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — due 2027",Bachelor of Science (no status),expected,yes,due,exact
+E032,education,Master of Engineering,"Master of Engineering, Northgate Institute — expected 2028",Master of Engineering (no status),expected,yes,expected,exact
+E033,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, anticipated graduation 2029",Juris Doctor (JD (no status),expected,yes,anticipated,exact
+E034,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) — expected completion 2027, Summit State University",Doctor of Medicine (MD (no status),expected,yes,expected,exact
+E035,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic (graduating 2028)",PhD (no status),expected,yes,graduating,exact
+E036,education,Associate of Arts,"Associate of Arts, Riverside University — due 2029",Associate of Arts (no status),expected,yes,due,exact
+E037,education,MBA,"MBA, Northgate Institute — expected 2027",MBA (no status),expected,yes,expected,exact
+E038,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, anticipated graduation 2028",Bachelor of Nursing (no status),expected,yes,anticipated,exact
+E039,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — discontinued before completion",Diploma (no status),incomplete,yes,discontinued,exact
 E040,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity (incomplete), Harbour Polytechnic",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E041,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — did not complete",Bachelor of Science (no status),incomplete,warning,did not complete,exact
-E042,education,Master of Engineering,"Master of Engineering, Northgate Institute, left before finishing (2019)",Master of Engineering (no status),incomplete,warning,left before finishing,exact
-E043,education,Juris Doctor (JD),"Partial Juris Doctor (JD), Lakeside College",Partial Juris Doctor (JD (no status),incomplete,warning,Partial,exact
-E044,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — unfinished",Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,miss
-E045,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — discontinued before completion",PhD (no status),incomplete,warning,discontinued,exact
-E046,education,Associate of Arts,"Associate of Arts (incomplete), Riverside University",Associate of Arts (no status),incomplete,warning,incomplete,exact
-E047,education,MBA,"MBA, Northgate Institute — did not complete",MBA (no status),incomplete,warning,did not complete,exact
-E048,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, left before finishing (2020)",Bachelor of Nursing (no status),incomplete,warning,left before finishing,exact
+E041,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — did not complete",Bachelor of Science (no status),incomplete,yes,did not complete,exact
+E042,education,Master of Engineering,"Master of Engineering, Northgate Institute, left before finishing (2019)",Master of Engineering (no status),incomplete,yes,left before finishing,exact
+E043,education,Juris Doctor (JD),"Partial Juris Doctor (JD), Lakeside College",Partial Juris Doctor (JD (no status),incomplete,yes,Partial,exact
+E044,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — unfinished",Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,miss
+E045,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — discontinued before completion",PhD (no status),incomplete,yes,discontinued,exact
+E046,education,Associate of Arts,"Associate of Arts (incomplete), Riverside University",Associate of Arts (no status),incomplete,yes,incomplete,exact
+E047,education,MBA,"MBA, Northgate Institute — did not complete",MBA (no status),incomplete,yes,did not complete,exact
+E048,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College, left before finishing (2020)",Bachelor of Nursing (no status),incomplete,yes,left before finishing,exact
 E049,education,Diploma in Accounting,"Partial Diploma in Accounting, Summit State University",✗ not in Affinda output,(not extracted),-,,affinda_dropped
 E050,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity, Harbour Polytechnic — unfinished",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E051,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — discontinued before completion",Bachelor of Science (no status),incomplete,warning,discontinued,exact
-E052,education,Master of Engineering,"Master of Engineering (incomplete), Northgate Institute",Master of Engineering (no status),incomplete,warning,incomplete,exact
-E053,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College — withdrawn 2020",Juris Doctor (JD (no status),incomplete,warning,withdrawn,exact
-E054,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — withdrew 2021",Doctor of Medicine (MD (no status),incomplete,warning,withdrew,exact
-E055,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, left the program 2022",PhD (no status),unknown,info,PhD,miss
-E056,education,Associate of Arts,"Associate of Arts (withdrawn 2018), Riverside University",Associate of Arts (no status),incomplete,warning,withdrawn,exact
-E057,education,MBA,"MBA, Northgate Institute — withdrawn 2019",MBA (no status),incomplete,warning,withdrawn,exact
-E058,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — withdrew 2020",Bachelor of Nursing (no status),incomplete,warning,withdrew,exact
-E059,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, left the program 2021",Diploma (no status),unknown,info,Diploma,miss
+E051,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — discontinued before completion",Bachelor of Science (no status),incomplete,yes,discontinued,exact
+E052,education,Master of Engineering,"Master of Engineering (incomplete), Northgate Institute",Master of Engineering (no status),incomplete,yes,incomplete,exact
+E053,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College — withdrawn 2020",Juris Doctor (JD (no status),incomplete,yes,withdrawn,exact
+E054,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — withdrew 2021",Doctor of Medicine (MD (no status),incomplete,yes,withdrew,exact
+E055,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, left the program 2022",PhD (no status),unknown,no,PhD,miss
+E056,education,Associate of Arts,"Associate of Arts (withdrawn 2018), Riverside University",Associate of Arts (no status),incomplete,yes,withdrawn,exact
+E057,education,MBA,"MBA, Northgate Institute — withdrawn 2019",MBA (no status),incomplete,yes,withdrawn,exact
+E058,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — withdrew 2020",Bachelor of Nursing (no status),incomplete,yes,withdrew,exact
+E059,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, left the program 2021",Diploma (no status),unknown,no,Diploma,miss
 E060,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity (withdrawn 2022), Harbour Polytechnic",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E061,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — withdrawn 2018",Bachelor of Science (no status),incomplete,warning,withdrawn,exact
-E062,education,Master of Engineering,"Master of Engineering, Northgate Institute — withdrew 2019",Master of Engineering (no status),incomplete,warning,withdrew,exact
-E063,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College — coursework completed, qualification not awarded",Juris Doctor (JD (no status),not_awarded,warning,not awarded,exact
-E064,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — attended, no degree conferred",Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,miss
-E065,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, requirements not met (2022)",PhD (no status),not_awarded,warning,requirements not met,exact
-E066,education,Associate of Arts,"Associate of Arts — Riverside University, exams not passed",Associate of Arts (no status),not_awarded,warning,exams not passed,exact
-E067,education,MBA,"MBA, Northgate Institute — coursework completed, qualification not awarded",MBA (no status),not_awarded,warning,not awarded,exact
-E068,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — attended, no degree conferred",Bachelor of Nursing (no status),unknown,info,Bachelor of Nursing,miss
-E069,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, requirements not met (2021)",Diploma in Accounting (no status),not_awarded,warning,requirements not met,exact
+E061,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — withdrawn 2018",Bachelor of Science (no status),incomplete,yes,withdrawn,exact
+E062,education,Master of Engineering,"Master of Engineering, Northgate Institute — withdrew 2019",Master of Engineering (no status),incomplete,yes,withdrew,exact
+E063,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College — coursework completed, qualification not awarded",Juris Doctor (JD (no status),not_awarded,yes,not awarded,exact
+E064,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — attended, no degree conferred",Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,miss
+E065,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic, requirements not met (2022)",PhD (no status),not_awarded,yes,requirements not met,exact
+E066,education,Associate of Arts,"Associate of Arts — Riverside University, exams not passed",Associate of Arts (no status),not_awarded,yes,exams not passed,exact
+E067,education,MBA,"MBA, Northgate Institute — coursework completed, qualification not awarded",MBA (no status),not_awarded,yes,not awarded,exact
+E068,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — attended, no degree conferred",Bachelor of Nursing (no status),unknown,no,Bachelor of Nursing,miss
+E069,education,Diploma in Accounting,"Diploma in Accounting, Summit State University, requirements not met (2021)",Diploma in Accounting (no status),not_awarded,yes,requirements not met,exact
 E070,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity — Harbour Polytechnic, exams not passed",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E071,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — coursework completed, qualification not awarded",Bachelor of Science (no status),unknown,info,Bachelor of Science,miss
-E072,education,Master of Engineering,"Master of Engineering, Northgate Institute — attended, no degree conferred",Master of Engineering (no status),unknown,info,Master of Engineering,miss
-E073,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, requirements not met (2020)",Juris Doctor (JD (no status),not_awarded,warning,requirements not met,exact
-E074,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) — Summit State University, exams not passed",Doctor of Medicine (MD (no status),not_awarded,warning,exams not passed,exact
-E075,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — deferred",PhD (no status),deferred,warning,deferred,exact
-E076,education,Associate of Arts,"Associate of Arts, Riverside University — on academic leave",Associate of Arts (no status),deferred,warning,on academic leave,exact
-E077,education,MBA,"MBA, Northgate Institute — study break since 2019",MBA (no status),deferred,warning,study break,exact
-E078,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College (enrolment suspended)",Bachelor of Nursing (no status),deferred,warning,enrolment suspended,exact
-E079,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — deferred",Diploma (no status),deferred,warning,deferred,exact
+E071,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — coursework completed, qualification not awarded",Bachelor of Science (no status),unknown,no,Bachelor of Science,miss
+E072,education,Master of Engineering,"Master of Engineering, Northgate Institute — attended, no degree conferred",Master of Engineering (no status),unknown,no,Master of Engineering,miss
+E073,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College, requirements not met (2020)",Juris Doctor (JD (no status),not_awarded,yes,requirements not met,exact
+E074,education,Doctor of Medicine (MD),"Doctor of Medicine (MD) — Summit State University, exams not passed",Doctor of Medicine (MD (no status),not_awarded,yes,exams not passed,exact
+E075,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — deferred",PhD (no status),deferred,yes,deferred,exact
+E076,education,Associate of Arts,"Associate of Arts, Riverside University — on academic leave",Associate of Arts (no status),deferred,yes,on academic leave,exact
+E077,education,MBA,"MBA, Northgate Institute — study break since 2019",MBA (no status),deferred,yes,study break,exact
+E078,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College (enrolment suspended)",Bachelor of Nursing (no status),deferred,yes,enrolment suspended,exact
+E079,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — deferred",Diploma (no status),deferred,yes,deferred,exact
 E080,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity, Harbour Polytechnic — on academic leave",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E081,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — study break since 2018",Bachelor of Science (no status),deferred,warning,study break,exact
-E082,education,Master of Engineering,"Master of Engineering, Northgate Institute (enrolment suspended)",Master of Engineering (no status),deferred,warning,enrolment suspended,exact
-E083,education,Juris Doctor (JD),"Juris Doctor (JD) (ABD — all but dissertation), Lakeside College",Juris Doctor (JD) (ABD (no status),unknown,info,Juris Doctor (JD) (ABD,miss
-E084,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — comprehensive exams passed, dissertation pending",Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,miss
-E085,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — coursework complete, thesis pending",PhD (no status),unknown,info,PhD,miss
-E086,education,Associate of Arts,"Associate of Arts — Riverside University, candidate (ABD)",Associate of Arts (no status),in_progress,warning,ABD,exact
-E087,education,MBA,"MBA (ABD — all but dissertation), Northgate Institute",MBA (ABD — all but dissertation (no status),in_progress,warning,ABD,exact
-E088,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — comprehensive exams passed, dissertation pending",Bachelor of Nursing (no status),unknown,info,Bachelor of Nursing,miss
-E089,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — coursework complete, thesis pending",Diploma in Accounting (no status),unknown,info,Diploma in Accounting,miss
+E081,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University — study break since 2018",Bachelor of Science (no status),deferred,yes,study break,exact
+E082,education,Master of Engineering,"Master of Engineering, Northgate Institute (enrolment suspended)",Master of Engineering (no status),deferred,yes,enrolment suspended,exact
+E083,education,Juris Doctor (JD),"Juris Doctor (JD) (ABD — all but dissertation), Lakeside College",Juris Doctor (JD) (ABD (no status),unknown,no,Juris Doctor (JD) (ABD,miss
+E084,education,Doctor of Medicine (MD),"Doctor of Medicine (MD), Summit State University — comprehensive exams passed, dissertation pending",Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,miss
+E085,education,PhD in Chemistry,"PhD in Chemistry, Harbour Polytechnic — coursework complete, thesis pending",PhD (no status),unknown,no,PhD,miss
+E086,education,Associate of Arts,"Associate of Arts — Riverside University, candidate (ABD)",Associate of Arts (no status),in_progress,yes,ABD,exact
+E087,education,MBA,"MBA (ABD — all but dissertation), Northgate Institute",MBA (ABD — all but dissertation (no status),in_progress,yes,ABD,exact
+E088,education,Bachelor of Nursing,"Bachelor of Nursing, Lakeside College — comprehensive exams passed, dissertation pending",Bachelor of Nursing (no status),unknown,no,Bachelor of Nursing,miss
+E089,education,Diploma in Accounting,"Diploma in Accounting, Summit State University — coursework complete, thesis pending",Diploma in Accounting (no status),unknown,no,Diploma in Accounting,miss
 E090,education,Certificate IV in Cybersecurity,"Certificate IV in Cybersecurity — Harbour Polytechnic, candidate (ABD)",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-E091,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University",Bachelor of Science (no status),unknown,info,Bachelor of Science,exact
-E092,education,Master of Engineering,Master of Engineering — Northgate Institute,Master of Engineering (no status),unknown,info,Master of Engineering,exact
-E093,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),unknown,info,Juris Doctor (JD,exact
-E094,education,Doctor of Medicine (MD),Doctor of Medicine (MD) — Summit State University,Doctor of Medicine (MD (no status),unknown,info,Doctor of Medicine (MD,exact
-C001,certification,AWS Certified Solutions Architect,"AWS Certified Solutions Architect — active, valid through 2027",AWS Certified Solutions Architect (no validity),active,info,active,exact
-C002,certification,PMP,PMP (current),PMP (no validity),active,info,current,exact
-C003,certification,CISSP,CISSP — in good standing,CISSP (no validity),active,info,in good standing,exact
-C004,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license — active, valid through 2027",Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,severity_ok
-C005,certification,CPA,CPA (current),CPA (no validity),active,info,current,exact
-C006,certification,Medical license,Medical license — in good standing,Medical license — in good standing (no validity),active,info,in good standing,exact
-C007,certification,Forklift operator licence,"Forklift operator licence — active, valid through 2027",Forklift operator licence (no validity),active,info,active,exact
-C008,certification,Security Clearance (Baseline),Security Clearance (Baseline) (current),Security Clearance (Baseline) (current (no validity),unknown,info,Security Clearance (Baseline) (current,severity_ok
-C009,certification,CPR / First Aid certification,CPR / First Aid certification — renewed 2021 (current),CPR / First Aid certification (no validity),active,info,current,exact
+E091,education,Bachelor of Science in Computer Science,"Bachelor of Science in Computer Science, Riverside University",Bachelor of Science (no status),unknown,no,Bachelor of Science,exact
+E092,education,Master of Engineering,Master of Engineering — Northgate Institute,Master of Engineering (no status),unknown,no,Master of Engineering,exact
+E093,education,Juris Doctor (JD),"Juris Doctor (JD), Lakeside College",Juris Doctor (JD (no status),unknown,no,Juris Doctor (JD,exact
+E094,education,Doctor of Medicine (MD),Doctor of Medicine (MD) — Summit State University,Doctor of Medicine (MD (no status),unknown,no,Doctor of Medicine (MD,exact
+C001,certification,AWS Certified Solutions Architect,"AWS Certified Solutions Architect — active, valid through 2027",AWS Certified Solutions Architect (no validity),active,no,active,exact
+C002,certification,PMP,PMP (current),PMP (no validity),active,no,current,exact
+C003,certification,CISSP,CISSP — in good standing,CISSP (no validity),active,no,in good standing,exact
+C004,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license — active, valid through 2027",Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,needs_review_ok
+C005,certification,CPA,CPA (current),CPA (no validity),active,no,current,exact
+C006,certification,Medical license,Medical license — in good standing,Medical license — in good standing (no validity),active,no,in good standing,exact
+C007,certification,Forklift operator licence,"Forklift operator licence — active, valid through 2027",Forklift operator licence (no validity),active,no,active,exact
+C008,certification,Security Clearance (Baseline),Security Clearance (Baseline) (current),Security Clearance (Baseline) (current (no validity),unknown,no,Security Clearance (Baseline) (current,needs_review_ok
+C009,certification,CPR / First Aid certification,CPR / First Aid certification — renewed 2021 (current),CPR / First Aid certification (no validity),active,no,current,exact
 C010,certification,Bar admission,"Bar admission, recertified 2022",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C011,certification,CCNA,CCNA — renewed 2018 (current),CCNA (no validity),active,info,current,exact
-C012,certification,Six Sigma Black Belt,"Six Sigma Black Belt, recertified 2019","Six Sigma Black Belt, recertified (no validity)",active,info,recertified,exact
-C013,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — renewed 2020 (current),AWS Certified Solutions Architect (no validity),active,info,current,exact
-C014,certification,PMP,"PMP, recertified 2021","PMP, recertified (no validity)",active,info,recertified,exact
-C015,certification,CISSP,CISSP — expired 2022,CISSP (no validity),expired,warning,expired,exact
-C016,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license, lapsed 2018",Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,miss
-C017,certification,CPA,CPA — no longer valid,CPA (no validity),expired,warning,no longer valid,exact
-C018,certification,Medical license,Medical license (expired),Medical license (no validity),expired,warning,expired,exact
-C019,certification,Forklift operator licence,"Forklift operator licence — expired, renewal pending",Forklift operator licence (no validity),expired,warning,expired,exact
-C020,certification,Security Clearance (Baseline),Security Clearance (Baseline) — expired 2022,Security Clearance (Baseline (no validity),expired,warning,expired,exact
-C021,certification,CPR / First Aid certification,"CPR / First Aid certification, lapsed 2018",CPR / First Aid certification (no validity),expired,warning,lapsed,exact
+C011,certification,CCNA,CCNA — renewed 2018 (current),CCNA (no validity),active,no,current,exact
+C012,certification,Six Sigma Black Belt,"Six Sigma Black Belt, recertified 2019","Six Sigma Black Belt, recertified (no validity)",active,no,recertified,exact
+C013,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — renewed 2020 (current),AWS Certified Solutions Architect (no validity),active,no,current,exact
+C014,certification,PMP,"PMP, recertified 2021","PMP, recertified (no validity)",active,no,recertified,exact
+C015,certification,CISSP,CISSP — expired 2022,CISSP (no validity),expired,yes,expired,exact
+C016,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license, lapsed 2018",Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,miss
+C017,certification,CPA,CPA — no longer valid,CPA (no validity),expired,yes,no longer valid,exact
+C018,certification,Medical license,Medical license (expired),Medical license (no validity),expired,yes,expired,exact
+C019,certification,Forklift operator licence,"Forklift operator licence — expired, renewal pending",Forklift operator licence (no validity),expired,yes,expired,exact
+C020,certification,Security Clearance (Baseline),Security Clearance (Baseline) — expired 2022,Security Clearance (Baseline (no validity),expired,yes,expired,exact
+C021,certification,CPR / First Aid certification,"CPR / First Aid certification, lapsed 2018",CPR / First Aid certification (no validity),expired,yes,lapsed,exact
 C022,certification,Bar admission,Bar admission — no longer valid,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C023,certification,CCNA,CCNA (expired),CCNA (no validity),expired,warning,expired,exact
-C024,certification,Six Sigma Black Belt,"Six Sigma Black Belt — expired, renewal pending",Six Sigma Black Belt (no validity),expired,warning,expired,exact
-C025,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — expired 2022,AWS Certified Solutions Architect (no validity),expired,warning,expired,exact
-C026,certification,PMP,"PMP, lapsed 2018","PMP, lapsed (no validity)",expired,warning,lapsed,exact
-C027,certification,CISSP,CISSP — no longer valid,CISSP (no validity),expired,warning,no longer valid,exact
-C028,certification,Registered Nurse (RN) license,Registered Nurse (RN) license (expired),Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,miss
-C029,certification,CPA,"CPA — expired, renewal pending",CPA (no validity),expired,warning,expired,exact
-C030,certification,Medical license,Medical license — expired 2022,Medical license (no validity),expired,warning,expired,exact
-C031,certification,Forklift operator licence,Forklift operator licence — revoked 2018,Forklift operator licence (no validity),revoked,warning,revoked,exact
-C032,certification,Security Clearance (Baseline),Security Clearance (Baseline) — licence revoked,Security Clearance (Baseline (no validity),revoked,warning,revoked,exact
-C033,certification,CPR / First Aid certification,CPR / First Aid certification — withdrawn by issuer,CPR / First Aid certification (no validity),revoked,warning,withdrawn by issuer,exact
+C023,certification,CCNA,CCNA (expired),CCNA (no validity),expired,yes,expired,exact
+C024,certification,Six Sigma Black Belt,"Six Sigma Black Belt — expired, renewal pending",Six Sigma Black Belt (no validity),expired,yes,expired,exact
+C025,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — expired 2022,AWS Certified Solutions Architect (no validity),expired,yes,expired,exact
+C026,certification,PMP,"PMP, lapsed 2018","PMP, lapsed (no validity)",expired,yes,lapsed,exact
+C027,certification,CISSP,CISSP — no longer valid,CISSP (no validity),expired,yes,no longer valid,exact
+C028,certification,Registered Nurse (RN) license,Registered Nurse (RN) license (expired),Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,miss
+C029,certification,CPA,"CPA — expired, renewal pending",CPA (no validity),expired,yes,expired,exact
+C030,certification,Medical license,Medical license — expired 2022,Medical license (no validity),expired,yes,expired,exact
+C031,certification,Forklift operator licence,Forklift operator licence — revoked 2018,Forklift operator licence (no validity),revoked,yes,revoked,exact
+C032,certification,Security Clearance (Baseline),Security Clearance (Baseline) — licence revoked,Security Clearance (Baseline (no validity),revoked,yes,revoked,exact
+C033,certification,CPR / First Aid certification,CPR / First Aid certification — withdrawn by issuer,CPR / First Aid certification (no validity),revoked,yes,withdrawn by issuer,exact
 C034,certification,Bar admission,Bar admission — revoked 2021,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C035,certification,CCNA,CCNA — licence revoked,CCNA — licence (no validity),revoked,warning,revoked,exact
-C036,certification,Six Sigma Black Belt,Six Sigma Black Belt — withdrawn by issuer,Six Sigma Black Belt (no validity),revoked,warning,withdrawn by issuer,exact
-C037,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — revoked 2019,AWS Certified Solutions Architect (no validity),revoked,warning,revoked,exact
-C038,certification,PMP,PMP — licence revoked,PMP — licence revoked (no validity),revoked,warning,revoked,exact
-C039,certification,CISSP,CISSP — withdrawn by issuer,CISSP (no validity),revoked,warning,withdrawn by issuer,exact
-C040,certification,Registered Nurse (RN) license,Registered Nurse (RN) license — revoked 2022,Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,miss
-C041,certification,CPA,CPA — licence revoked,CPA — licence (no validity),revoked,warning,revoked,exact
-C042,certification,Medical license,Medical license — withdrawn by issuer,Medical license (no validity),revoked,warning,withdrawn by issuer,exact
-C043,certification,Forklift operator licence,Forklift operator licence — temporarily suspended,Forklift operator licence (no validity),suspended,warning,suspended,exact
-C044,certification,Security Clearance (Baseline),Security Clearance (Baseline) (under suspension),Security Clearance (Baseline) (under suspension (no validity),unknown,info,Security Clearance (Baseline) (under suspension,miss
-C045,certification,CPR / First Aid certification,CPR / First Aid certification — temporarily suspended,CPR / First Aid certification (no validity),suspended,warning,suspended,exact
+C035,certification,CCNA,CCNA — licence revoked,CCNA — licence (no validity),revoked,yes,revoked,exact
+C036,certification,Six Sigma Black Belt,Six Sigma Black Belt — withdrawn by issuer,Six Sigma Black Belt (no validity),revoked,yes,withdrawn by issuer,exact
+C037,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — revoked 2019,AWS Certified Solutions Architect (no validity),revoked,yes,revoked,exact
+C038,certification,PMP,PMP — licence revoked,PMP — licence revoked (no validity),revoked,yes,revoked,exact
+C039,certification,CISSP,CISSP — withdrawn by issuer,CISSP (no validity),revoked,yes,withdrawn by issuer,exact
+C040,certification,Registered Nurse (RN) license,Registered Nurse (RN) license — revoked 2022,Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,miss
+C041,certification,CPA,CPA — licence revoked,CPA — licence (no validity),revoked,yes,revoked,exact
+C042,certification,Medical license,Medical license — withdrawn by issuer,Medical license (no validity),revoked,yes,withdrawn by issuer,exact
+C043,certification,Forklift operator licence,Forklift operator licence — temporarily suspended,Forklift operator licence (no validity),suspended,yes,suspended,exact
+C044,certification,Security Clearance (Baseline),Security Clearance (Baseline) (under suspension),Security Clearance (Baseline) (under suspension (no validity),unknown,no,Security Clearance (Baseline) (under suspension,miss
+C045,certification,CPR / First Aid certification,CPR / First Aid certification — temporarily suspended,CPR / First Aid certification (no validity),suspended,yes,suspended,exact
 C046,certification,Bar admission,Bar admission (under suspension),✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C047,certification,CCNA,CCNA — temporarily suspended,CCNA (no validity),suspended,warning,suspended,exact
-C048,certification,Six Sigma Black Belt,Six Sigma Black Belt (under suspension),Six Sigma Black Belt (under suspension (no validity),suspended,warning,under suspension,exact
-C049,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — temporarily suspended,AWS Certified Solutions Architect (no validity),suspended,warning,suspended,exact
-C050,certification,PMP,PMP (under suspension),PMP (under suspension (no validity),suspended,warning,under suspension,exact
-C051,certification,CISSP,CISSP — exam scheduled 2029,CISSP (no validity),pending,warning,scheduled,exact
-C052,certification,Registered Nurse (RN) license,Registered Nurse (RN) license (pending),Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,miss
-C053,certification,CPA,CPA — awaiting results,CPA (no validity),pending,warning,awaiting,exact
-C054,certification,Medical license,"Candidate, Medical license","Candidate, Medical license (no validity)",pending,warning,Candidate,exact
-C055,certification,Forklift operator licence,Forklift operator licence — exam scheduled 2027,Forklift operator licence (no validity),pending,warning,scheduled,exact
-C056,certification,Security Clearance (Baseline),Security Clearance (Baseline) (pending),Security Clearance (Baseline (no validity),pending,warning,pending,exact
-C057,certification,CPR / First Aid certification,CPR / First Aid certification — awaiting results,CPR / First Aid certification (no validity),pending,warning,awaiting,exact
+C047,certification,CCNA,CCNA — temporarily suspended,CCNA (no validity),suspended,yes,suspended,exact
+C048,certification,Six Sigma Black Belt,Six Sigma Black Belt (under suspension),Six Sigma Black Belt (under suspension (no validity),suspended,yes,under suspension,exact
+C049,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — temporarily suspended,AWS Certified Solutions Architect (no validity),suspended,yes,suspended,exact
+C050,certification,PMP,PMP (under suspension),PMP (under suspension (no validity),suspended,yes,under suspension,exact
+C051,certification,CISSP,CISSP — exam scheduled 2029,CISSP (no validity),pending,yes,scheduled,exact
+C052,certification,Registered Nurse (RN) license,Registered Nurse (RN) license (pending),Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,miss
+C053,certification,CPA,CPA — awaiting results,CPA (no validity),pending,yes,awaiting,exact
+C054,certification,Medical license,"Candidate, Medical license","Candidate, Medical license (no validity)",pending,yes,Candidate,exact
+C055,certification,Forklift operator licence,Forklift operator licence — exam scheduled 2027,Forklift operator licence (no validity),pending,yes,scheduled,exact
+C056,certification,Security Clearance (Baseline),Security Clearance (Baseline) (pending),Security Clearance (Baseline (no validity),pending,yes,pending,exact
+C057,certification,CPR / First Aid certification,CPR / First Aid certification — awaiting results,CPR / First Aid certification (no validity),pending,yes,awaiting,exact
 C058,certification,Bar admission,"Candidate, Bar admission",✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C059,certification,CCNA,CCNA — exam scheduled 2028,CCNA (no validity),pending,warning,scheduled,exact
-C060,certification,Six Sigma Black Belt,Six Sigma Black Belt (pending),Six Sigma Black Belt (no validity),pending,warning,pending,exact
-C061,certification,AWS Certified Solutions Architect,"AWS Certified Solutions Architect — attempted, did not pass",AWS Certified Solutions Architect (no validity),pending,warning,did not pass,exact
-C062,certification,PMP,"PMP, unsuccessful attempt 2019",PMP (no validity),pending,warning,unsuccessful,exact
-C063,certification,CISSP,"CISSP — attempted, did not pass",CISSP (no validity),pending,warning,did not pass,exact
-C064,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license, unsuccessful attempt 2021",Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,miss
-C065,certification,CPA,"CPA — attempted, did not pass",CPA (no validity),pending,warning,did not pass,exact
-C066,certification,Medical license,"Medical license, unsuccessful attempt 2018",Medical license (no validity),pending,warning,unsuccessful,exact
-C067,certification,Forklift operator licence,Forklift operator licence — valid until 2027,Forklift operator licence (no validity),active,info,valid,exact
-C068,certification,Security Clearance (Baseline),"Security Clearance (Baseline), expires 2028",Security Clearance (Baseline (no validity),unknown,info,Security Clearance (Baseline,severity_ok
-C069,certification,CPR / First Aid certification,"CPR / First Aid certification — current, expires 2029",CPR / First Aid certification (no validity),active,info,current,exact
+C059,certification,CCNA,CCNA — exam scheduled 2028,CCNA (no validity),pending,yes,scheduled,exact
+C060,certification,Six Sigma Black Belt,Six Sigma Black Belt (pending),Six Sigma Black Belt (no validity),pending,yes,pending,exact
+C061,certification,AWS Certified Solutions Architect,"AWS Certified Solutions Architect — attempted, did not pass",AWS Certified Solutions Architect (no validity),pending,yes,did not pass,exact
+C062,certification,PMP,"PMP, unsuccessful attempt 2019",PMP (no validity),pending,yes,unsuccessful,exact
+C063,certification,CISSP,"CISSP — attempted, did not pass",CISSP (no validity),pending,yes,did not pass,exact
+C064,certification,Registered Nurse (RN) license,"Registered Nurse (RN) license, unsuccessful attempt 2021",Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,miss
+C065,certification,CPA,"CPA — attempted, did not pass",CPA (no validity),pending,yes,did not pass,exact
+C066,certification,Medical license,"Medical license, unsuccessful attempt 2018",Medical license (no validity),pending,yes,unsuccessful,exact
+C067,certification,Forklift operator licence,Forklift operator licence — valid until 2027,Forklift operator licence (no validity),active,no,valid,exact
+C068,certification,Security Clearance (Baseline),"Security Clearance (Baseline), expires 2028",Security Clearance (Baseline (no validity),unknown,no,Security Clearance (Baseline,needs_review_ok
+C069,certification,CPR / First Aid certification,"CPR / First Aid certification — current, expires 2029",CPR / First Aid certification (no validity),active,no,current,exact
 C070,certification,Bar admission,Bar admission — valid until 2027,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C071,certification,CCNA,"CCNA, expires 2028",CCNA (no validity),unknown,info,CCNA,severity_ok
-C072,certification,Six Sigma Black Belt,"Six Sigma Black Belt — current, expires 2029",Six Sigma Black Belt (no validity),active,info,current,exact
-C073,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — valid until 2027,AWS Certified Solutions Architect (no validity),active,info,valid,exact
-C074,certification,PMP,"PMP, expires 2028",PMP (no validity),unknown,info,PMP,severity_ok
-C075,certification,CISSP,"CISSP — current, expires 2029",CISSP (no validity),active,info,current,exact
-C076,certification,Registered Nurse (RN) license,Registered Nurse (RN) license — valid until 2027,Registered Nurse (RN) license (no validity),unknown,info,Registered Nurse (RN) license,severity_ok
-C077,certification,CPA,CPA — 2019,CPA (no validity),unknown,info,CPA,exact
-C078,certification,Medical license,Medical license,Medical license (no validity),unknown,info,Medical license,exact
-C079,certification,Forklift operator licence,Forklift operator licence — 2021,Forklift operator licence (no validity),unknown,info,Forklift operator licence,exact
-C080,certification,Security Clearance (Baseline),Security Clearance (Baseline),Security Clearance (Baseline (no validity),unknown,info,Security Clearance (Baseline,exact
-C081,certification,CPR / First Aid certification,CPR / First Aid certification — 2018,CPR / First Aid certification (no validity),unknown,info,CPR / First Aid certification,exact
+C071,certification,CCNA,"CCNA, expires 2028",CCNA (no validity),unknown,no,CCNA,needs_review_ok
+C072,certification,Six Sigma Black Belt,"Six Sigma Black Belt — current, expires 2029",Six Sigma Black Belt (no validity),active,no,current,exact
+C073,certification,AWS Certified Solutions Architect,AWS Certified Solutions Architect — valid until 2027,AWS Certified Solutions Architect (no validity),active,no,valid,exact
+C074,certification,PMP,"PMP, expires 2028",PMP (no validity),unknown,no,PMP,needs_review_ok
+C075,certification,CISSP,"CISSP — current, expires 2029",CISSP (no validity),active,no,current,exact
+C076,certification,Registered Nurse (RN) license,Registered Nurse (RN) license — valid until 2027,Registered Nurse (RN) license (no validity),unknown,no,Registered Nurse (RN) license,needs_review_ok
+C077,certification,CPA,CPA — 2019,CPA (no validity),unknown,no,CPA,exact
+C078,certification,Medical license,Medical license,Medical license (no validity),unknown,no,Medical license,exact
+C079,certification,Forklift operator licence,Forklift operator licence — 2021,Forklift operator licence (no validity),unknown,no,Forklift operator licence,exact
+C080,certification,Security Clearance (Baseline),Security Clearance (Baseline),Security Clearance (Baseline (no validity),unknown,no,Security Clearance (Baseline,exact
+C081,certification,CPR / First Aid certification,CPR / First Aid certification — 2018,CPR / First Aid certification (no validity),unknown,no,CPR / First Aid certification,exact
 C082,certification,Bar admission,Bar admission,✗ not in Affinda output,(not extracted),-,,affinda_dropped
-C083,certification,CCNA,CCNA — 2020,CCNA (no validity),unknown,info,CCNA,exact
-C084,certification,Six Sigma Black Belt,Six Sigma Black Belt,Six Sigma Black Belt (no validity),unknown,info,Six Sigma Black Belt,exact
+C083,certification,CCNA,CCNA — 2020,CCNA (no validity),unknown,no,CCNA,exact
+C084,certification,Six Sigma Black Belt,Six Sigma Black Belt,Six Sigma Black Belt (no validity),unknown,no,Six Sigma Black Belt,exact

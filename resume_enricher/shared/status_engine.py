@@ -13,7 +13,7 @@ import re
 from datetime import date
 
 from resume_enricher.shared.locator import STATUS_BOUNDARIES, locate
-from resume_enricher.shared.models import Enrichment, build_evidence, severity_of
+from resume_enricher.shared.models import Enrichment, build_evidence, needs_review_of
 
 _YEAR = re.compile(r"\b(?:19|20)\d{2}\b")       # a 4-digit year like 2016 or 2027
 
@@ -42,7 +42,7 @@ def classify_status(clause, entry, rules, current_year):
 
 
 def run_status(entries, raw_text, rules, kind):
-    """Make ONE Enrichment for every entry (full mirror), each severity-stamped."""
+    """Make ONE Enrichment for every entry (full mirror), each review-stamped."""
     current_year = date.today().year
     out = []
     for i, entry in enumerate(entries):
@@ -60,7 +60,7 @@ def run_status(entries, raw_text, rules, kind):
                 entity=name,
                 status=status,
                 confidence="high" if span else "low",
-                severity=severity_of(kind, status),
+                needsReview=needs_review_of(kind, status),
                 evidence=build_evidence(name, matched, pos, clause_start, span),
             ).to_dict()
         )

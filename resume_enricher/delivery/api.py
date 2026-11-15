@@ -29,7 +29,7 @@ app = FastAPI(
     version="1.0",
     description=(
         "Enriches an Affinda Resume-Parser response. The original is returned "
-        "untouched under `originalJSON`; our added status / severity / evidence "
+        "untouched under `originalJSON`; our added status / needsReview / evidence "
         "records sit alongside under `enrichmentJSON`."
     ),
 )

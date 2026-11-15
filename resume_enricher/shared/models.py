@@ -54,7 +54,7 @@ class Enrichment:
     entity: str            # the item's name, copied so a human can double-check (e.g. "SQL")
     status: str            # the metadata we discovered (e.g. "no_experience", "expired", "strong", "plain")
     confidence: str        # how sure we are of the status: "high" or "low"
-    severity: str          # "warning" (something's off) or "info" (fine / just context) — for easy filtering
+    needsReview: str       # "yes" = a human should glance at this; "no" = nothing to flag — for easy filtering
     evidence: Evidence     # the proof (see above)
 
     def to_dict(self) -> dict:
@@ -71,37 +71,37 @@ class EnrichedJSON:
     #                        lists of skill / education / certificate Enrichment pieces and a summary.
 
 
-# --- The full status menu + how serious each status is ---------------------
+# --- The full status menu + whether each status needs a human glance --------
 # We are a full ENRICHER: we record a status for EVERY item, not just the bad ones.
 # This one table does two jobs:
 #   1. its KEYS are the complete list of allowed statuses (the official menu) —
-#      a status not listed here is a typo/bug, and severity_of() fails loudly;
-#   2. its VALUES tag each status as "warning" (worth a recruiter's attention) or
-#      "info" (fine, or just neutral context), so the customer can filter easily.
-STATUS_SEVERITY: dict[str, dict[str, str]] = {
+#      a status not listed here is a typo/bug, and needs_review_of() fails loudly;
+#   2. its VALUES tag each status "yes" (a human should glance at it) or "no"
+#      (nothing to flag: fine, or just neutral context), so the customer can filter.
+STATUS_NEEDS_REVIEW: dict[str, dict[str, str]] = {
     "skill": {
-        "no_experience": "warning", "learning": "warning", "lapsed": "warning", "basic": "warning",
-        "intermediate": "info", "strong": "info", "plain": "info",
+        "no_experience": "yes", "learning": "yes", "lapsed": "yes", "basic": "yes",
+        "intermediate": "no", "strong": "no", "plain": "no",
     },
     "education": {
-        "in_progress": "warning", "expected": "warning", "incomplete": "warning",
-        "deferred": "warning", "not_awarded": "warning",
-        "completed": "info", "unknown": "info",
+        "in_progress": "yes", "expected": "yes", "incomplete": "yes",
+        "deferred": "yes", "not_awarded": "yes",
+        "completed": "no", "unknown": "no",
     },
     "certification": {
-        "expired": "warning", "revoked": "warning", "suspended": "warning", "pending": "warning",
-        "active": "info", "unknown": "info",
+        "expired": "yes", "revoked": "yes", "suspended": "yes", "pending": "yes",
+        "active": "no", "unknown": "no",
     },
 }
 
 
-def severity_of(kind: str, status: str) -> str:
-    """Look up how serious a status is: "warning" or "info".
+def needs_review_of(kind: str, status: str) -> str:
+    """Look up whether a status needs a human glance: "yes" or "no".
 
     Fails loudly if the status isn't on the official menu for that kind — that
     means a typo somewhere, which we want to catch, not silently ignore.
     """
     try:
-        return STATUS_SEVERITY[kind][status]
+        return STATUS_NEEDS_REVIEW[kind][status]
     except KeyError:
         raise ValueError(f"unknown {kind} status '{status}' — not on the allowed menu")

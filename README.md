@@ -55,14 +55,14 @@ Each note is one simple record:
 
 ```
 skill: SQL
-   status     = no_experience     (what the text says)
-   severity   = warning           (worth a look)  ... or "info" = fine
-   confidence = high              (we found it in the text)
-   evidence   = "no experience"   (the exact words, and where they are)
+   status      = no_experience     (what the text says)
+   needsReview = yes               (worth a look)  ... or "no" = fine
+   confidence  = high              (we found it in the text)
+   evidence    = "no experience"   (the exact words, and where they are)
 ```
 
-We write a note for **every** item, good or bad. The customer filters the "warning"
-ones. It is easier to filter than to recover.
+We write a note for **every** item, good or bad. The customer filters the
+`needsReview: yes` ones. It is easier to filter than to recover.
 
 ---
 
@@ -75,7 +75,7 @@ flowchart TD
     S["START: Affinda JSON"]:::a --> C["Copy it. Never touch the original"]:::g
     C --> L["① FIND the item in the resume text"]:::b
     L --> R["② READ the words around it"]:::b
-    R --> T["③ TAG it: status + severity + proof"]:::b
+    R --> T["③ TAG it: status + needsReview + proof"]:::b
     T --> M{"more items?"}:::g
     M -->|yes| L
     M -->|no| OUT["DONE: original + our notes"]:::e
@@ -90,7 +90,7 @@ Every note has **three simple answers**:
 ```
 ┌───────────────┬──────────────────────────────┬─────────────────────────┐
 │ STATUS        │ what does the text say?      │ comes from the rules    │
-│ SEVERITY      │ should a reader care?        │ fixed table: warn/info  │
+│ NEEDS REVIEW  │ should a reader care?        │ fixed table: yes / no   │
 │ CONFIDENCE    │ did we find it in the text?  │ high (yes) / low (no)   │
 └───────────────┴──────────────────────────────┴─────────────────────────┘
 ```
@@ -99,8 +99,8 @@ Every note has **three simple answers**:
 
 ```mermaid
 flowchart TD
-    A{"Found a matching<br/>cue word?"} -->|"no"| Q["Stay quiet.<br/>severity = info.<br/>Never a false alarm."]:::g
-    A -->|"yes"| F["Give the real status.<br/>Maybe a warning."]:::b
+    A{"Found a matching<br/>cue word?"} -->|"no"| Q["Stay quiet.<br/>needsReview = no.<br/>Never a false alarm."]:::g
+    A -->|"yes"| F["Give the real status.<br/>Maybe needsReview = yes."]:::b
     classDef g fill:#eef0f2,stroke:#777,color:#111
     classDef b fill:#e8f0fe,stroke:#4a6fa5,color:#111
 ```
