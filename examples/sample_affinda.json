@@ -1,0 +1,16 @@
+{
+  "data": {
+    "skills": [
+      {"name": "SQL"},
+      {"name": "Python"},
+      {"name": "Excel"}
+    ],
+    "education": [
+      {"qualification": "BSc Computer Science"}
+    ],
+    "certifications": [
+      {"name": "AWS Certified Solutions Architect"}
+    ],
+    "rawText": "Skills: no experience with SQL, expert in Python, learning Excel. Education: BSc Computer Science (withdrew 2016). Certifications: AWS Certified Solutions Architect (expired 2021)."
+  }
+}

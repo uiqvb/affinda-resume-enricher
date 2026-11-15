@@ -1,0 +1,9 @@
+# Resume Enricher dependencies.
+#
+# NOTE: the core engine (shared/, modules/, app/) uses ONLY the Python standard
+# library — zero third-party packages. The dependencies below are needed ONLY by
+# the delivery layer (the CLI and the HTTP API), i.e. the outside doors.
+
+typer==0.29.1          # the command-line door
+fastapi==0.163.0       # the HTTP door
+uvicorn[standard]==0.54.0   # the web server that runs the HTTP door

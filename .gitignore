@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NOTE: eval/data/all_resumes.json and eval/results/* are intentionally TRACKED —
+# they are the test corpus and the before/after evidence, part of the deliverable.

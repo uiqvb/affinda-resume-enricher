@@ -1,0 +1,22 @@
+# Run the Resume Enricher API with one command:
+#
+#     docker compose -f resume_enricher/delivery/docker/docker-compose.yml up --build
+#
+# Then the API is at http://localhost:8000  (docs at /docs).
+
+services:
+  resume_enricher-api:
+    build:
+      # Build context = repo root, three levels up from this file
+      # (docker -> delivery -> resume_enricher package -> repo root).
+      context: ../../../
+      dockerfile: resume_enricher/delivery/docker/Dockerfile
+    image: resume_enricher:1.0
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0) if urllib.request.urlopen('http://localhost:8000/health').status==200 else sys.exit(1)"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+    restart: unless-stopped
