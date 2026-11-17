@@ -73,7 +73,8 @@ bug 1). We cannot enrich what never arrived.
 > that original wording, so those are enriched normally. They are **not** counted as
 > drops. Only skills Affinda left out entirely are counted above.
 
-> Full write-up with every reproducible ID lives in the process repo.
+> Full write-up with every reproducible ID, plus the two bugs we fixed in our own code:
+> [`BUGS.md`](BUGS.md).
 
 <br/>
 

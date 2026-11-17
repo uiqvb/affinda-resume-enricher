@@ -195,8 +195,9 @@ result = enrich(affinda_response)   # -> { "originalJSON": ..., "enrichmentJSON"
 
 ```
 resume_enricher/   the engine        (shared, modules, app, delivery)
-docs/              3 docs            HOW_IT_WORKS + DECISIONS (choices + roadmap)
+docs/              4 docs            HOW_IT_WORKS + DECISIONS (choices + roadmap)
                                      + REFERENCE (proof, Affinda bugs, output menu, limits)
+                                     + BUGS (Affinda parser bugs + our fixed bugs)
 eval/              the test harness  + all 300 resumes + results
 tests/             34 tests
 examples/          a sample to try
@@ -220,6 +221,8 @@ Full plan: the roadmap inside [`docs/DECISIONS.md`](docs/DECISIONS.md).
 
 For the deeper questions (is this already in Affinda? what bugs did we find in it? what
 exactly do I get back? where is it weak?) see [`docs/REFERENCE.md`](docs/REFERENCE.md).
+
+Every bug we found, in Affinda's parser and in our own code, is in [`docs/BUGS.md`](docs/BUGS.md).
 
 ---
 
